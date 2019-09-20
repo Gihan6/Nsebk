@@ -55,6 +55,8 @@ public class ShippingCardsAdapter extends RecyclerView.Adapter<ShippingCardsAdap
 
         holder.points.setText(data.get(postion).getPoints());
         holder.priceTV.setText(data.get(postion).getCost());
+        holder.tv_title.setText(data.get(postion).getTitle());
+        holder.tv_ticket.setText(data.get(postion).getCoupons());
 
         if(pref.getCurrency().equals("2"))
             holder.text_currency_package.setText(context.getString(R.string.sar));
@@ -108,10 +110,14 @@ public class ShippingCardsAdapter extends RecyclerView.Adapter<ShippingCardsAdap
         @BindView(R.id.main_deals_card_date)
         TextView buy_package;
 
+        @BindView(R.id.tv_title)
+        TextView tv_title;
+
+        @BindView(R.id.tv_ticket)
+        TextView tv_ticket;
+
         @BindView(R.id.text_currency_package)
         TextView text_currency_package;
-
-
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

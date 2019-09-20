@@ -21,14 +21,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
                 android:gravity="center"
-                android:text="@string/buyscreen"
+                android:text="@string/coupons"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
 
             <ImageView
                 android:id="@+id/back_shipping_buy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_gravity="start|center_vertical"
                 android:padding="8dp"
                 app:srcCompat="@drawable/ic_left_white" />
@@ -72,7 +72,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/ticketnum"
+                    android:text="@string/points_num"
+
                     android:textColor="@color/colorPrimary" />
 
                 <TextView
@@ -109,7 +110,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/points_num"
+                    android:text="@string/ticketnum"
                     android:textColor="@color/colorPrimary" />
 
                 <TextView
@@ -262,25 +263,17 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorPrimary"
             android:orientation="vertical"
-            android:paddingLeft="32dp"
             android:paddingTop="10dp"
-            android:paddingRight="32dp"
             android:paddingBottom="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/white"
-                android:gravity="center"
                 android:orientation="vertical"
                 android:padding="8dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="اختار العمله المفضلة"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="15sp" />
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -288,29 +281,59 @@
                     android:layout_weight="1"
                     android:layoutDirection="rtl"
                     android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="اختار العمله المفضلة"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:textSize="15sp" />
 
                     <RadioGroup
+                        android:weightSum="2"
+                        android:orientation="horizontal"
                         android:id="@+id/currencyRG"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <RadioButton
+                            android:layout_weight="1"
                             android:id="@+id/sarRB"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="SAR"
+                            android:text="@string/rsa"
                             android:textColor="@color/colorPrimary"
                             android:textDirection="rtl" />
 
                         <RadioButton
                             android:id="@+id/dollarRB"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dollar"
+                            android:text="@string/dollar_currency"
                             android:textColor="@color/colorPrimary"
                             android:textDirection="rtl" />
                     </RadioGroup>
+
+
                 </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bill"
+        />
+
+    <EditText
+        android:outlineProvider="background"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        />
+</LinearLayout>
+
+
 
             </LinearLayout>
 
@@ -329,36 +352,77 @@
                     android:layout_weight="1"
                     android:layoutDirection="rtl"
                     android:orientation="vertical">
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="اخر وسيله الدفع"
+                         android:gravity="center"
+                         android:padding="8dp"
+                         android:textColor="@color/colorPrimaryDark"
+                         android:textSize="15sp"
 
+                         />
                     <RadioGroup
-                        android:id="@+id/paymentRG"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مدي"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="بطاقه ائتمانيه "
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+                    </RadioGroup>
+                    <LinearLayout
+                        android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <RadioButton
-                            android:id="@+id/mdaRB"
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="100dp"
                             android:layout_height="wrap_content"
-                            android:text="مدى"
-                            android:textColor="@color/colorPrimary"
-                            android:textDirection="rtl" />
+                            android:text="رقم البطاقه"
 
-                        <RadioButton
-                            android:id="@+id/payment_cardRB"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="بطاقة ائتمانية"
-                            android:textColor="@color/colorPrimary"
-                            android:textDirection="rtl" />
 
-                        <RadioButton
-                            android:id="@+id/payment_sdadRB"
-                            android:layout_width="match_parent"
+                            />
+                        <EditText
+                            android:hint="xxxx xxxx xxxx xxxx "
+                            android:gravity="center"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                            android:layout_width="100dp"
                             android:layout_height="wrap_content"
-                            android:text="سداد"
-                            android:textColor="@color/colorPrimary"
-                            android:textDirection="rtl" />
-                    </RadioGroup>
+                            android:text="تاريخ الانتهاء"
+
+
+                            />
+                        <EditText
+                            android:hint="MM YY"
+                            android:gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
                 </LinearLayout>
 
             </LinearLayout>

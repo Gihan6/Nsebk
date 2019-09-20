@@ -79,7 +79,7 @@
     <string name="navcontact">تواصل معنا</string>
     <string name="navlogout">تسجيل الخروج</string>
     <string name="change">استبدال</string>
-    <string name="points_num">عدد النقاط</string>
+    <string name="points_num">نقاط المكافآت</string>
     <string name="onlinedeals">الصفقات الحالية</string>
     <string name="commingdeals">الصفقات القادمة</string>
     <string name="endeddeals">الصفقات المنتهية</string>
@@ -173,5 +173,12 @@
     <string name="enterVerifyCode">ادخل كود التحقق المرسل لبريدك الالكتروني :</string>
     <string name="verify">تحقق</string>
     <string name="handleError">"    الصفقة منتهية بالفعل "</string>
+    <string name="ticket">تذكرة</string>
+    <string name="point">نقطة</string>
+    <string name="coupons">الباقات</string>
+    <string name="rsa">ريال سعودي</string>
+    <string name="bill">مبلغ الفاتورة</string>
+
+
 
 </resources>

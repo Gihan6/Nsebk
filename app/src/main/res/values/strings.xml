@@ -163,4 +163,9 @@
     <string name="enterVerifyCode">Enter Verify code that has been send to email</string>
     <string name="verify">Verify</string>
     <string name="handleError">Aready Finished</string>
+    <string name="coupons">coupons</string>
+    <string name="ticket">ticket</string>
+    <string name="point">Point</string>
+    <string name="rsa">RSA</string>
+    <string name="bill">Bill</string>
 </resources>
