@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">Nasebk</string>
+    <string name="title_categ">Main Categories</string>
+    <string name="sar">SAR</string>
+    <string name="type_sub">Type Of  </string>
+    <string name="title_register_one">step one</string>
+    <string name="points">Points</string>
+    <string name="points_num">Points Number</string>
+    <string name="title_register_two">step two</string>
+    <string name="loading">Loading</string>
+    <string name="only_register">Register</string>
+    <string name="title_register_three">step three</string>
+    <string name="reg_fullname">full name</string>
+    <string name="send"> Send</string>
+    <string name="reg_email">email</string>
+    <string name="reg_email_or_phone">UserName Or Phone</string>
+    <string name="save">save</string>
+    <string name="reg_username">user name</string>
+    <string name="reg_pass">password</string>
+    <string name="reg_repass">confirm password</string>
+    <string name="regconpass">password in matched</string>
+    <string name="country">country</string>
+    <string name="gender">gender</string>
+    <string name="message_header">Message Subject</string>
+    <string name="message_write">Write Message Here</string>
+    <string name="tell_price">Tell Your Price</string>
+    <string name="dialog_text">your balance will be editted \n points will be discounted from your account</string>
+    <string name="regnext">next</string>
+    <string name="city">city</string>
+    <string name="cancel">Cancel</string>
+    <string name="empty_list">No Data Found </string>
+    <string name="phone">phone</string>
+    <string name="job">job</string>
+    <string name="phone_lenghth">Phone length is 10 digits only</string>
+    <string name="select_country_fist">Please Select Your Country First</string>
+    <string name="select_city_fist">Please Select Your City First</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="birth">birthdate</string>
+    <string name="winner_name">Winner Name</string>
+    <string name="message_sent">Your Message Sent Successfully</string>
+
+    <string name="confirm1">i confirmed with this information</string>
+    <string name="agree">I agree to the registration requirements</string>
+    <string name="done">successfully registered</string>
+    <string name="done1">confirm from the link sended</string>
+    <string name="done2">check your email inbox for confirm </string>
+    <string name="done4">confirmation code </string>
+    <string name="resend">send again</string>
+    <string name="agreee">Agree</string>
+    <string name="complete_data">please complete data</string>
+    <string name="wrong_register">check the email is wrong </string>
+    <string name="wrong_login">check the email is wrong or password</string>
+    <string name="pass_match">password is not matched</string>
+    <string name="skip"><u>skip</u></string>
+    <string name="enter_valid_email">Invalid Email Address  </string>
+    <string name="ticketnum">Tickets Number</string>
+    <string name="error_login">Please Check Email and password </string>
+    <string name="info1">nsebk app new idea in the buying </string>
+    <string name="info2">define the price you wannt</string>
+    <string name="info3">and you may be the winner</string>
+    <string name="newuser">new user </string>
+    <string name="login">login</string>
+    <string name="congrats">Congratulations for the winner in this deal</string>
+    <string name="congrats2">Congratulations</string>
+    <string name="payment_options">Payment Options</string>
+    <string name="charge_date">Charges History</string>
+    <string name="my_address">My Addresses</string>
+    <string name="change">Change</string>
+
+    <string name="forgot_pass" tools:ignore="ExtraTranslation"><u>forgot password</u></string>
+
+    <string name="navmain">Home</string>
+    <string name="maincategory">Category</string>
+    <string name="navinterests">Interests</string>
+    <string name="navaccount">Profile</string>
+    <string name="navprivacy">Privacy</string>
+    <string name="navterms">Terms and Conditions</string>
+    <string name="navabout">About App</string>
+    <string name="navcontact">Contact Us</string>
+    <string name="navlogout">Logout</string>
+
+    <string name="error_in_data">Error in data </string>
+
+    <string name="onlinedeals">Online Deals</string>
+    <string name="commingdeals">Coming Deals</string>
+    <string name="endeddeals">Ended Deals</string>
+    <string name="ended">Ended</string>
+    <string name="mydeals">My Deals</string>
+    <string name="price_less">Price is less than the initial price for the deal </string>
+    <string name="complex_pass">Password must contain at least one capital letter , one small letter , one digit </string>
+    <string name="valid_pass">Password match </string>
+
+
+    <string name="credits">Packages</string>
+    <!--<string name="already_part">You Are Already Part of The Deal, your old price was %1$s! SAR , You Can update your old Price just enter your new price and click update  </string>-->
+
+    <string name="already_part">You Are Already Part of The Deal, your old price was %1$s! , You Can update your old Price just enter your new price and click update  </string>
+
+    <string name="favorite">Favorites</string>
+    <string name="settings">Settings</string>
+    <string name="added">Done Added</string>
+    <string name="rewards">Rewards</string>
+    <string name="empty">No Deals Here</string>
+    <string name="endedin"> ended in </string>
+    <string name="buyscreen">Buy Screen</string>
+    <string name="initprice">Intial Price</string>
+    <string name="price__">Price </string>
+    <string name="done_">Done</string>
+    <string name="buy">Buy</string>
+    <string name="select">Select</string>
+    <string name="deal_ended">deal ended </string>
+    <string name="select_valid_date">Please Select Valid Date </string>
+    <string name="part_done">You bought the package </string>
+    <string name="edit_account">Edit account</string>
+    <string name="pass_">password is not valid</string>
+    <string name="empty_countries">Empty list of countries</string>
+    <string name="SAR">SAR</string>
+    <string name="forget_pass">Forget Password</string>
+    <string name="account_info">Account Information</string>
+    <string name="forget_pass_desc">Enter Your Registered Email and  we will \n send you a link to reset your password</string>
+
+    <string name="apply">Apply</string>
+    <string name="code">Code</string>
+    <string name="kassaem">Coupons Number</string>
+    <string name="tickets">Tickets</string>
+    <string name="doneprice">Done Sending Price</string>
+    <string name="comming_soon">Comming Soon</string>
+    <string name="update">Update</string>
+    <string name="top_five">Top 5 Participants </string>
+    <string name="top_five_empty">No Other Participants </string>
+    <string name="continu">Continue</string>
+    <string name="back">Back</string>
+    <string name="clearify_string">when entering this deal ticket price is %1$s! You will be given %2$s free Vouchers.</string>
+    <string name="clearify_string_sucess">Congrats you entered the deal ticket price is %1$s! You will be given %2$s free Vouchers.</string>
+    <string name="select_inter">Select your interests</string>
+    <string name="id_number">Member ID</string>
+    <string name="points_rassed">Points Balance</string>
+
+    <string name="kassaem_balance">Coupons Balance</string>
+    <string name="home_Address">Home Address</string>
+    <string name="address">Address</string>
+    <string name="street_name">Street Name</string>
+    <string name="home_number">Home Number</string>
+    <string name="address_details">Address Details</string>
+    <string name="address_details2">Address Details 2</string>
+    <string name="city_street">City - Neighbor</string>
+    <string name="zip">Zip Code</string>
+    <string name="clearify_update_string">when editting this deal   %1$s tickets will be taken your old price is %2$s</string>
+    <!--<string name="price_discount_points">your price  = your ( price - points )</string>-->
+
+
+    <string name="available">Available</string>
+    <string name="sar_currency">SAR</string>
+    <string name="dollar_currency">Dollar</string>
+    <string name="welcome">Welcome </string>
+    <string name="language">Language</string>
+
+    <string name="header_tickets">Tickets</string>
+    <string name="header_rewards_points">Rewards Points</string>
+    <string name="price_discount_points">Price discountt points</string>
+    <string name="enterVerifyCode">Enter Verify code that has been send to email</string>
+    <string name="verify">Verify</string>
+    <string name="handleError">Aready Finished</string>
+</resources>

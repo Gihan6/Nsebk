@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layoutDirection="locale"
+    android:textDirection="locale"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="@string/language"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layoutDirection="locale"
+        android:textDirection="locale"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <!--<RadioGroup-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<RadioButton-->
+                <!--android:button="@null"-->
+                <!--android:lines="2"-->
+                <!--android:text="عربي"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp" />-->
+
+
+            <!--<RadioButton-->
+
+                <!--android:lines="2"-->
+                <!--android:text="English"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp" />-->
+
+        <!--</RadioGroup>-->
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="locale"
+            android:textDirection="locale"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:checked="false"
+                android:id="@+id/radio_ar"
+                android:layoutDirection="locale"
+                android:textDirection="locale"
+                android:layout_margin="6dp"
+                android:textColor="@color/white"
+                android:text="عربي"
+                android:button="@null"
+                android:drawableTop="@android:drawable/btn_radio"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+            <RadioButton
+                android:checked="false"
+                android:id="@+id/radio_en"
+                android:layoutDirection="locale"
+                android:textDirection="locale"
+                android:layout_margin="6dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="English"
+                android:button="@null"
+                android:drawableTop="@android:drawable/btn_radio"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+
+
+        </RadioGroup>
+
+</LinearLayout>
+</LinearLayout>

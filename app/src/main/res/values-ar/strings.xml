@@ -1,0 +1,177 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">نصيبك</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string-array name="gavor_array"></string-array>
+    <string name="sar">ريال</string>
+    <string name="points">نقاط</string>
+    <string name="drawer_open" translatable="false">DrawerOpen</string>
+    <string name="only_register">التسجيل</string>
+    <string name="drawer_close" translatable="false">DrawerClosed</string>
+    <string name="title_categ">القائمة الرئيسية</string>
+    <string name="type_sub">نوع  </string>
+    <string name="title_register_one">الخطوة الاولي</string>
+    <string name="title_register_two">الخطوة الثانية</string>
+    <string name="save">حفظ</string>
+    <string name="clearify_update_string">عند تعديل الصفقه سيتم خصم %1$s من رصيدك و المبلغ المدفوع القديم كان %2$s</string>
+    <!--<string name="already_part">انت بالفعل مشترك في هذه الصفقه , السعر الذي ادخلته مسبقا %1$s ريال يمكنك تعديل السعر القديم بادخال سعرك الجديد والضغط علي تعديل </string>-->
+    <string name="already_part">انت بالفعل مشترك في هذه الصفقه , السعر الذي ادخلته مسبقا %1$s  يمكنك تعديل السعر القديم بادخال سعرك الجديد والضغط علي تعديل </string>
+
+    <string name="id_number">رقم العضوية</string>
+    <string name="points_rassed">رصيد النقاط</string>
+    <string name="kassaem_balance">رصيد القسائم</string>
+    <string name="kassaem">عدد القسائم</string>
+    <string name="account_info">معلومات الحساب</string>
+    <string name="message_header">عنوان الرسالة</string>
+    <string name="message_write">اكتب رسالتك هنا</string>
+    <string name="title_register_three">الخطوة الثالثة</string>
+    <string name="reg_fullname">الاسم كامل</string>
+    <string name="reg_email">البريد الإلكترونى</string>
+    <string name="reg_email_or_phone">البريد الإلكترونى أو الهاتف</string>
+    <string name="reg_username">اسم المستخدم</string>
+    <string name="reg_pass">كلمة المرور</string>
+    <string name="reg_repass">تأكيد كلمة المرور</string>
+    <string name="regconpass">كلمة المرور متطابقة</string>
+    <string name="regnext">التالى</string>
+    <string name="country">الدولة</string>
+    <string name="city">المدينة</string>
+    <string name="phone">رقم الجوال</string>
+    <string name="job">المهنة</string>
+    <string name="gender">الجنس</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="birth">العمر</string>
+    <string name="confirm1">اتعهد بصحة البيانات المدخلة</string>
+    <string name="agree">أوافق على كل شروط التسجيل</string>
+    <string name="done">تم التسجيل بنجاح</string>
+    <string name="done1">من فضلك قم بتنشيط العضوية من خلال رابط</string>
+    <string name="done2">التفعيل المرسل لبريدالإلكترونى المسجل</string>
+    <string name="done4">كود التحقق</string>
+    <string name="resend">إعادة الارسال</string>
+    <string name="code">كوبون</string>
+    <string name="apply">تطبيق</string>
+    <string name="send"> ارسال</string>
+    <string name="agreee">موافق</string>
+    <string name="complete_data">من فضلك أكمل جميع البيانات</string>
+    <string name="wrong_register">هذا البريد تم التسجيل به من قبل </string>
+    <string name="pass_match">الباسورد غير مطابق</string>
+    <string name="skip"><u>تخطي</u></string>
+    <string name="info1">تطبيق نصيبك فكرة جديدة فى عالم الشراء</string>
+    <string name="info2">حدد سعر المناسب لك وببساطة قد تكون</string>
+    <string name="info3">الرابح بأقل الاسعار</string>
+    <string name="newuser">مستخدم جديد</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="wrong_login">الايميل خاطئ او الباسورد </string>
+    <string name="enter_valid_email">الايميل خاطئ  </string>
+
+    <string name="forgot_pass" tools:ignore="ExtraTranslation"><u>نسيت كلمة المرور ؟</u></string>
+
+
+    <string name="navmain">الرئيسية</string>
+    <string name="maincategory">الاقسام الرئيسية</string>
+    <string name="navinterests">اهتماماتى</string>
+    <string name="navaccount">حسابى</string>
+    <string name="navprivacy">سياسة الخصوصية</string>
+    <string name="navterms">الشروط والاحكام</string>
+    <string name="navabout">عن التطبيق</string>
+    <string name="navcontact">تواصل معنا</string>
+    <string name="navlogout">تسجيل الخروج</string>
+    <string name="change">استبدال</string>
+    <string name="points_num">عدد النقاط</string>
+    <string name="onlinedeals">الصفقات الحالية</string>
+    <string name="commingdeals">الصفقات القادمة</string>
+    <string name="endeddeals">الصفقات المنتهية</string>
+    <string name="mydeals">صفقاتى</string>
+    <string name="credits">الباقات</string>
+    <string name="favorite">مفضلتى</string>
+    <string name="settings">الاعدادات</string>
+    <string name="added">تمت الاضافة</string>
+    <string name="rewards">المكافآت</string>
+    <string name="empty">لا توجد صفقات حالياً</string>
+    <string name="endedin">ينتهي في</string>
+    <string name="buyscreen">شاشة الشراء</string>
+    <string name="initprice">السعر الابتدائي</string>
+    <string name="ticketnum">عدد التذاكر</string>
+    <string name="price__">السعر الأصلى</string>
+    <string name="done_">تم</string>
+    <string name="SAR">ريال</string>
+    <string name="loading">جاري التحميل</string>
+    <string name="error_login">من فضلك تاكد من البريد وكلمة المرور</string>
+    <string name="tickets">تذاكر</string>
+    <string name="doneprice">تم ارسال السعر</string>
+    <string name="comming_soon">قريبا</string>
+    <string name="top_five">اعلي 5 مشتركين</string>
+    <string name="top_five_empty">لايوجد مشتركين اخرين</string>
+    <string name="tell_price">حدد سعرك</string>
+    <string name="dialog_text">سيتم تعديل رصيدك \n سيتم خصم نقطة من رصيدك</string>
+    <string name="cancel">الغاء</string>
+    <string name="empty_list">لاتوجد بيانات لعرضها </string>
+    <string name="message_sent">تم ارسال رسالتك بنجاح </string>
+    <string name="phone_lenghth">يتكون الهاتف من 10 ارقام فقك</string>
+    <string name="select_country_fist">اختر الدوله اولا </string>
+    <string name="select_city_fist">اختر المدينة أولا </string>
+    <string name="winner_name">اسم الفائز</string>
+    <string name="congrats">تهانينا للفائز في هذه الصفقة</string>
+    <string name="congrats2">تهانينا</string>
+    <string name="payment_options">طرق الدفع</string>
+    <string name="charge_date">عمليات الشحن</string>
+    <string name="my_address">عناويني</string>
+    <string name="error_in_data">خطا في استقبال البيانات </string>
+    <string name="ended">منتهية</string>
+    <string name="price_less">السعر اقل من السعر المبداي المقرر لهذه الصفقة </string>
+    <string name="complex_pass">Password must contain at least one capital letter , one small letter , one digit </string>
+    <string name="valid_pass">كلمة السر متطابقة </string>
+    <string name="buy">شراء</string>
+    <string name="deal_ended">الصفقة انتهت </string>
+    <string name="select_valid_date">من فضلك اختر تاريخ صالح </string>
+    <string name="part_done">تم شراء الباقة بنجاح</string>
+    <string name="edit_account">تعديل الحساب</string>
+    <string name="pass_">كلمه السر غير متاحة</string>
+    <string name="empty_countries">قائمة الدول فارغه</string>
+    <string name="select_inter">اختر اهتماماتك</string>
+    <string name="select">اختيار</string>
+    <string name="forget_pass">نسيت كلمة السر</string>
+    <string name="forget_pass_desc">ادخل بريدك الذي قمت بالتسجيل من خلاله وسوف نرسل لك رابط لاعادة تعيين كملة المرور </string>
+    <string name="update">تعديل</string>
+    <string name="continu">استمرار</string>
+    <string name="back">رجوع</string>
+    <string name="clearify_string">عند دخولك الصفقة سيتم خصم عدد %1$s  تذكرة من رصيد التذاكر لديك . و سيتم منحك عدد نقاط %2$s</string>
+    <string name="clearify_string_sucess">Congrats you entered the deal ticket price is %1$s! You will be given %2$s free Vouchers.</string>
+
+    <string name="home_Address">عنوان المنزل</string>
+    <string name="address">العنوان</string>
+    <string name="street_name">رقم الشارع</string>
+    <string name="home_number">رقم المنزل</string>
+    <string name="address_details">تفاصيل العنوان</string>
+    <string name="address_details2"> تفاصيل العنوان 2</string>
+    <string name="city_street">المدينة - الحي</string>
+    <string name="zip">Zip Code</string>
+    <!--<string name="price_discount_points">سعرك = ( السعر المكتوب  - عدد النقاط )</string>-->
+
+
+    <string name="available">متوفر</string>
+
+    <string name="sar_currency">ريال</string>
+    <string name="dollar_currency">دولار</string>
+
+    <string name="welcome">مرحبا </string>
+    <string name="header_tickets">التذاكر</string>
+    <string name="header_rewards_points">نقاط المكافآت</string>
+
+    <string name="language">اللغة</string>
+    <string-array name="spinne_array">
+        <item>الرياض</item>
+        <item>الرياض</item>
+        <item>الرياض</item>
+        <item>الرياض</item>
+        <item>الرياض</item>
+        <item>الرياض</item>
+        <item>الرياض</item>
+    </string-array>
+    <string name="enterVerifyCode">ادخل كود التحقق المرسل لبريدك الالكتروني :</string>
+    <string name="verify">تحقق</string>
+    <string name="handleError">"    الصفقة منتهية بالفعل "</string>
+
+</resources>

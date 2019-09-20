@@ -1,0 +1,1995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <locale>ar</locale>
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0cf5f680-1cc6-4039-9ba5-2bbae000478d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Nsebk" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Nsebk" type="f1a62948:ProjectNode" />
+                <item name="Nsebk" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Nsebk" type="f1a62948:ProjectNode" />
+                <item name="Nsebk" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Nsebk" type="f1a62948:ProjectNode" />
+                <item name=":app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Nsebk" type="f1a62948:ProjectNode" />
+                <item name=":app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Nsebk" type="f1a62948:ProjectNode" />
+                <item name=":app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-600011545">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="28" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.3" value="5" />
+          <entry key="project.open.time.30" value="2" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.70" value="1" />
+          <entry key="project.open.time.73" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="32" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="22" />
+          <entry key="gradle" value="28" />
+          <entry key="java" value="963" />
+          <entry key="png" value="2" />
+          <entry key="ttf" value="1" />
+          <entry key="xml" value="511" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="22" />
+          <entry key="Font" value="1" />
+          <entry key="Groovy" value="28" />
+          <entry key="Image" value="2" />
+          <entry key="JAVA" value="963" />
+          <entry key="XML" value="511" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="425" />
+          <entry key="gradle" value="38" />
+          <entry key="java" value="19922" />
+          <entry key="txt" value="32" />
+          <entry key="xml" value="11609" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="38" />
+          <entry key="JAVA" value="19922" />
+          <entry key="PLAIN_TEXT" value="457" />
+          <entry key="XML" value="11609" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="909819030">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="26" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.3" value="5" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.4" value="6" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="32" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="4" />
+          <entry key="gradle" value="11" />
+          <entry key="java" value="292" />
+          <entry key="jpg" value="2" />
+          <entry key="png" value="15" />
+          <entry key="properties" value="3" />
+          <entry key="ttf" value="2" />
+          <entry key="xml" value="130" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="4" />
+          <entry key="Font" value="2" />
+          <entry key="Groovy" value="11" />
+          <entry key="Image" value="17" />
+          <entry key="JAVA" value="292" />
+          <entry key="Properties" value="3" />
+          <entry key="XML" value="130" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="5" />
+          <entry key="gradle" value="44" />
+          <entry key="java" value="4776" />
+          <entry key="properties" value="2" />
+          <entry key="xml" value="1444" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="44" />
+          <entry key="JAVA" value="4776" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Properties" value="2" />
+          <entry key="XML" value="1444" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="2075324246">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Nsebk" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/DataManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4785">
+              <caret line="231" column="36" selection-start-line="231" selection-start-column="36" selection-end-line="231" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Splash.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/util/SharedPrefDueDate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1276">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="e#3009#3010#0" expanded="true" />
+                <element signature="e#3063#3064#0" expanded="true" />
+                <element signature="e#3097#3098#0" expanded="true" />
+                <element signature="e#3151#3152#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3683">
+              <caret line="127" column="33" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1943">
+              <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+              <folding>
+                <element signature="e#5832#5833#0" expanded="true" />
+                <element signature="e#5869#5870#0" expanded="true" />
+                <element signature="e#13218#13219#0" expanded="true" />
+                <element signature="e#13270#13271#0" expanded="true" />
+                <element signature="e#13316#13317#0" expanded="true" />
+                <element signature="e#13364#13365#0" expanded="true" />
+                <element signature="e#13617#13618#0" expanded="true" />
+                <element signature="e#13664#13665#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Home/HomePresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/remote/RibotsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4843">
+              <caret line="167" column="41" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/DealDetailsRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/HomeRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile_vertical" />
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tokde</find>
+      <find>loading</find>
+      <find>hideLoader</find>
+      <find>showLoader</find>
+      <find>load</find>
+      <find>RecyclerView</find>
+      <find>sw</find>
+      <find>show</find>
+      <find>currenciesList</find>
+      <find>editor</find>
+      <find>Currency</find>
+      <find>__first</find>
+      <find>currency</find>
+      <find>ريال</find>
+      <find>set</find>
+      <find>2</find>
+      <find>showError</find>
+      <find>forgetPas</find>
+      <find>BASE_URL</find>
+      <find>1$s</find>
+      <find>minPriceTV</find>
+      <find>countr</find>
+      <find>Nsebk</find>
+      <find>Nasebk</find>
+      <find>تخطي</find>
+      <find>ski</find>
+      <find>L</find>
+      <find>skip</find>
+      <find>getHomeData</find>
+      <find>deal</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>17sp</replace>
+      <replace>5dp</replace>
+      <replace>8dp</replace>
+      <replace>wrap_content</replace>
+      <replace>left_set</replace>
+      <replace>left_sep</replace>
+      <replace>bottom_sep</replace>
+      <replace>right_sep</replace>
+      <replace>12dp</replace>
+      <replace>app:layout_constraintTop_toBottomOf=&quot;@id/phone_tv_1&quot;</replace>
+      <replace>dp</replace>
+      <replace>android:padding=&quot;14dp&quot;</replace>
+      <replace>app:srcCompat</replace>
+      <replace>22sp</replace>
+      <replace>points_tv</replace>
+      <replace>product_name</replace>
+      <replace>ProductSubView</replace>
+      <replace>product_price</replace>
+      <replace>country</replace>
+      <replace>currentDate()</replace>
+      <replace>12sp</replace>
+      <replace>2dp</replace>
+      <replace>this</replace>
+      <replace>35dp</replace>
+      <replace>40dp</replace>
+      <replace>EditText android:textStyle=&quot;bold&quot;</replace>
+      <replace>14sp</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\My Apps\Nsebk\app\src\main\java\com\RiyadSoftware\nsebkapp\view</dir>
+      <dir>D:\My Apps\Nsebk\app</dir>
+      <dir>D:\My Apps\Nsebk\app\src\main\res\drawable</dir>
+      <dir>D:\My Apps\Nsebk\app\src\main\java\com\RiyadSoftware\nsebkapp\Ui\Home\ProductActivity</dir>
+      <dir>D:\My Apps\Nsebk\app\src\main\java\com\RiyadSoftware\nsebkapp\adapters</dir>
+      <dir>D:\My Apps\Nsebk\app\src\main\res\drawable-xxxhdpi</dir>
+      <dir>D:\My Apps\Nsebk\app\src\main\java\com\RiyadSoftware\nsebkapp\activities</dir>
+      <dir>D:\My Apps\Nsebk\app\src\main\res</dir>
+      <dir>D:\My Apps\Nsebk\app\src\main\java\com\RiyadSoftware\nsebkapp</dir>
+      <dir>D:\My Apps\Nsebk\app\src\main\res\layout</dir>
+    </dirStrings>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="D:\My Apps\Nsebk\Nsbak1234" />
+    <option name="KEY_ALIAS" value="nsbak1234" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/navigation_header_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/MainActivity2.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/LoginResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/AccountInfos.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/coupon/CouponView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/coupon/CouponPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Packages/PackagesSubView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/coupon/CouponResponse.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/gradle.properties" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_offers.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/HomeModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/OffersAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_shipping_buy.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/util/OnItemClickListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/RewardAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/awards/ReplaceAwardResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/awards/ReplaceAwardRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Rewards/RewardsSubView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Rewards/RewardsPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/Rewards.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/RewardsResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/PackageFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_favorites.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MyFavorites.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/currency/CurrencyRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/currency/CurrencyResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/DataManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Home/HomePresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Home/HomeView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/util/SharedPrefDueDate.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Splash.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Login/LoginPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/remote/RibotsService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/util/Constant.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/shipping_card.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/ShippingCardsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/coupon/CouponRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Packages/PackagesPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/DealDetailsResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_langauge.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/LangaugeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="120" />
+    <option name="y" value="64" />
+    <option name="width" value="1280" />
+    <option name="height" value="707" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages AndroidView="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Nsebk" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nsebkapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nsebkapp" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nsebkapp" type="462c0819:PsiDirectoryNode" />
+              <item name="Ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nsebkapp" type="462c0819:PsiDirectoryNode" />
+              <item name="Ui" type="462c0819:PsiDirectoryNode" />
+              <item name="ChargesHisatory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nsebkapp" type="462c0819:PsiDirectoryNode" />
+              <item name="Ui" type="462c0819:PsiDirectoryNode" />
+              <item name="Rewards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nsebkapp" type="462c0819:PsiDirectoryNode" />
+              <item name="Ui" type="462c0819:PsiDirectoryNode" />
+              <item name="Terms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nsebk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nsebk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="font" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DEBUGGABLE_DEVICE" value="huawei-ale_l21-W3D7N15601007914" />
+    <property name="DEBUGGABLE_PROCESS" value="com.RiyadSoftware.nsebkapp" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="ExportApk.ApkPath" value="D:\My Apps\Nsebk\app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="Lang&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.activities.LangaugeActivity&#10;Consta&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/util/Constant.java&#10;Main&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java&#10;Deal&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/DealDetailsResponse.java&#10;DealDetails&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.data.models.DealDetailsRequest&#10;DealD&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.data.models.DealDetailsResponse.DealDetails&#10;Buy&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.activities.Buy&#10;حشؤن&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/PackageFragment.java&#10;shi&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.activities.Shipping_buy&#10;Lan&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.activities.LangaugeActivity&#10;sett&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.activities.SettingActivity&#10;Shared&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.util.SharedPrefDueDate&#10;MainFra&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java&#10;favo&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.fragments.MyFavorites&#10;mainA&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/MainActivity2.java&#10;MainA&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.activities.MainActivity&#10;pack&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/PackageFragment.java&#10;const&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/util/Constant.java&#10;rewards&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.Ui.Rewards.RewardsPresenter&#10;قثصشقيس&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Rewards/RewardsPresenter.java&#10;pac&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/PackageFragment.java&#10;ship&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java&#10;winner&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.adapters.WinnersAdadper&#10;main&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java&#10;mainFr&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java&#10;editPro&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/EditProfile/EditprofileResponse.java&#10;Const&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/util/Constant.java&#10;productAct&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/build/generated/source/apt/debug/com/RiyadSoftware/nsebkapp/Ui/ProductActivity&#10;packag&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/PackageFragment.java&#10;حشؤنش&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.fragments.PackageFragment&#10;}خىس&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.util.Constant&#10;Bu&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java&#10;Reward&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/RewardAdapter.java&#10;reward&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/res/layout/reward_card.xml&#10;rewardRes&#9;PSI&#9;JAVA://com.RiyadSoftware.nsebkapp.data.models.RewardsResponse&#10;mainF&#9;FILE&#9;file://D:/Bilal/freelance/Nsebk/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java" />
+    <property name="ToolWindowLogcat.ShowToolbar" value="false" />
+    <property name="ToolWindowPreview.ShowToolbar" value="false" />
+    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="D:/AndroidSDK/sdk" />
+    <property name="device.picker.selection" value="W3D7N15601007914" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Nsebk" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.2.1" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1558908683813" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="com.RiyadSoftware.nsebkapp.Ui.Register" />
+      <recent name="com.RiyadSoftware.nsebkapp.activities" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.RiyadSoftware.nsebkapp.data.models.currency" />
+      <recent name="com.RiyadSoftware.nsebkapp.data.models.awards" />
+      <recent name="com.RiyadSoftware.nsebkapp.util" />
+      <recent name="com.RiyadSoftware.nsebkapp.Ui.coupon" />
+      <recent name="com.RiyadSoftware.nsebkapp.adapters" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Bilal\freelance\Nsebk\app\src\main\res\layout" />
+      <recent name="D:\My Apps\Nsebk\app\src\main\res\drawable-xxxhdpi" />
+      <recent name="D:\My Apps\Nsebk\app\src\main\java\com\RiyadSoftware\nsebkapp\Ui\Terms" />
+      <recent name="D:\My Apps\Nsebk\app\src\main\java\com\RiyadSoftware\nsebkapp\Ui\Contact" />
+      <recent name="D:\My Apps\Nsebk\app\src\main\java\com\RiyadSoftware\nsebkapp\util" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Bilal/Study/Nsebk/app [cleanBuildCache]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="cleanBuildCache" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Gradle.D:/Bilal/Study/Nsebk/app [cleanBuildCache]" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0cf5f680-1cc6-4039-9ba5-2bbae000478d" name="Default Changelist" comment="" />
+      <created>1553512146924</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553512146924</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <layout>
+      <window_info id="Captures" order="0" sideWeight="0.50141644" side_tool="true" weight="0.19905533" />
+      <window_info id="Structure" order="1" sideWeight="0.50141644" side_tool="true" weight="0.19905533" />
+      <window_info id="Favorites" order="2" sideWeight="0.5050505" side_tool="true" weight="0.20492867" />
+      <window_info id="Build Variants" order="3" sideWeight="0.50141644" side_tool="true" weight="0.19905533" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.4949495" visible="true" weight="0.17380026" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.5154185" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49865046" weight="0.68281937" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.627566" />
+      <window_info anchor="bottom" id="TODO" order="3" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.87096775" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5006748" side_tool="true" weight="0.43201134" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49932525" weight="0.25256976" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" weight="0.3286119" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32844576" />
+      <window_info anchor="bottom" id="Flutter Performance" order="10" side_tool="true" />
+      <window_info anchor="right" id="Android WiFi ADB" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.3294423" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Preview" order="5" sideWeight="0.49685535" weight="0.34370947" />
+      <window_info anchor="right" id="Sympli" order="6" weight="0.3299595" />
+      <window_info anchor="right" id="Fabric" order="7" weight="0.3299595" />
+      <window_info anchor="right" id="Flutter Inspector" order="8" />
+      <window_info anchor="right" id="Flutter Outline" order="9" weight="0.3294423" />
+      <window_info anchor="right" id="Device File Explorer" order="10" sideWeight="0.5031447" side_tool="true" weight="0.45525292" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>345</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>348</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>259</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/DealsAdapter.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>148</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/AddTicket/AddTicketPresenter.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>476</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>600</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>537</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>591</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>592</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>139</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>140</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>287</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>288</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>320</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>329</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>334</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>297</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>301</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>123</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>134</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>539</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/DealsAdapter.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/ShippingCardsAdapter.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/AddTicket/AddTicketPresenter.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/remote/RibotsService.java</url>
+          <line>234</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/RewardAdapter.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>662</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>657</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>660</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>658</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>540</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>550</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>543</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Categories/CategoriesPresenter.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/EditProfile/EditProfilePresenter.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/AccountInfos.java</url>
+          <line>320</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Packages/PackagesPresenter.java</url>
+          <line>170</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Packages/PackagesPresenter.java</url>
+          <line>176</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java</url>
+          <line>124</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Packages/PackagesPresenter.java</url>
+          <line>152</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Packages/PackagesPresenter.java</url>
+          <line>158</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Packages/PackagesPresenter.java</url>
+          <line>191</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Packages/PackagesPresenter.java</url>
+          <line>184</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Packages/PackagesPresenter.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/PackageFragment.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/PackageFragment.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Home/HomePresenter.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>379</line>
+          <properties />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>382</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>349</line>
+          <properties />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>354</line>
+          <properties />
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>359</line>
+          <properties />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>363</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>367</line>
+          <properties />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>370</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>322</line>
+          <properties />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>323</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java</url>
+          <line>147</line>
+          <properties />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>324</line>
+          <properties />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>184</line>
+          <properties />
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>191</line>
+          <properties />
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>217</line>
+          <properties />
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>411</line>
+          <properties />
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/OffersAdapter.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/OffersAdapter.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/OffersAdapter.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/OffersAdapter.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/OffersAdapter.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>609</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java</url>
+          <line>604</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java</url>
+          <line>125</line>
+          <properties />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java</url>
+          <line>129</line>
+          <properties />
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java</url>
+          <line>134</line>
+          <properties />
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/RewardAdapter.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Rewards/RewardsPresenter.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/RewardAdapter.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Rewards/RewardsPresenter.java</url>
+          <line>124</line>
+          <properties />
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/Rewards.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/remote/RibotsService.java</url>
+          <line>221</line>
+          <properties />
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Home/HomePresenter.java</url>
+          <line>286</line>
+          <properties />
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Home/HomePresenter.java</url>
+          <line>295</line>
+          <properties />
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Home/HomePresenter.java</url>
+          <line>274</line>
+          <properties />
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Home/HomePresenter.java</url>
+          <line>288</line>
+          <properties />
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java</url>
+          <line>406</line>
+          <properties />
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Splash.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Splash.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/util/SharedPrefDueDate.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/util/SharedPrefDueDate.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Splash.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Splash.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Splash.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Reset/ResetPresenter.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Reset/ResetPresenter.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Reset/ResetPresenter.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>request</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pref.getCurrency()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>replaceAwardResponse</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>offersResponseModel</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>RewardsResponse</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>couponResponse</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>homeModel</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>currentDealsAdapter.getItemCount()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9628">
+          <caret line="332" column="33" selection-start-line="332" selection-start-column="33" selection-end-line="332" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_my_favorites.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MyFavorites.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/AddTicketResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/CategoryProductsRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/CategoryProductResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/ChargeResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/currency/CurrencyRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/currency/CurrencyResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/base/BasePresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/CurrentDealsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+          <folding>
+            <element signature="e#5810#5811#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/OffersAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/SettingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Home/HomeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Reset/ResetPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Register/RegisterPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/ResetPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1508">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Login/LoginPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/CountriesResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_shipping_cards.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="56" column="37" lean-forward="true" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_shipping_buy.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/PackageFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2712#2713#0" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2809#2810#0" expanded="true" />
+            <element signature="e#2857#2858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buy.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4611">
+          <caret line="159" column="51" selection-start-line="159" selection-start-column="41" selection-end-line="159" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/adapters/ShippingCardsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+          <folding>
+            <element signature="e#1950#1981#0" expanded="true" />
+            <element signature="e#2046#2089#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Packages/PackagesPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3422">
+          <caret line="149" column="37" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Shipping_buy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/coupon/CouponRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/shipping_card.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3828">
+          <caret line="132" column="34" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/Buy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13688">
+          <caret line="540" column="54" selection-start-line="540" selection-start-column="35" selection-end-line="540" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/DealDetailsResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2639">
+          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/util/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/RiyadSoftware/nsebkapp/ExampleInstrumentedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="78" column="33" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_langauge.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/MainActivity2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/LangaugeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="46" column="67" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/DataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4785">
+          <caret line="231" column="36" selection-start-line="231" selection-start-column="36" selection-end-line="231" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/util/SharedPrefDueDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3063#3064#0" expanded="true" />
+            <element signature="e#3097#3098#0" expanded="true" />
+            <element signature="e#3151#3152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3683">
+          <caret line="127" column="33" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/fragments/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1943">
+          <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+          <folding>
+            <element signature="e#5832#5833#0" expanded="true" />
+            <element signature="e#5869#5870#0" expanded="true" />
+            <element signature="e#13218#13219#0" expanded="true" />
+            <element signature="e#13270#13271#0" expanded="true" />
+            <element signature="e#13316#13317#0" expanded="true" />
+            <element signature="e#13364#13365#0" expanded="true" />
+            <element signature="e#13617#13618#0" expanded="true" />
+            <element signature="e#13664#13665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Ui/Home/HomePresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/remote/RibotsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4843">
+          <caret line="167" column="41" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/DealDetailsRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/data/models/HomeRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/RiyadSoftware/nsebkapp/Splash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

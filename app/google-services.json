@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "606684153097",
+    "firebase_url": "https://nsebkapp.firebaseio.com",
+    "project_id": "nsebkapp",
+    "storage_bucket": "nsebkapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606684153097:android:b9b05821485bd7ae",
+        "android_client_info": {
+          "package_name": "com.RiyadSoftware.nsebkapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606684153097-llifhuvbqtdq0paul5tsmahge1s4k7ef.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.RiyadSoftware.nsebkapp",
+            "certificate_hash": "238967f33c70fdf646b3dbc4f9e7dc3c5153b95c"
+          }
+        },
+        {
+          "client_id": "606684153097-1ph7vhbg15d89jlfop06t9rfhf69vk5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoMhSmGbizjAbLSzX1wMKH7Fvf8LdgRb8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606684153097-1ph7vhbg15d89jlfop06t9rfhf69vk5o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "606684153097-okccl5hgk7sfis8pdprat776q3o8flfu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.OrxtraDev.nasebakApp"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606684153097:android:e24ceef340ccf9dd",
+        "android_client_info": {
+          "package_name": "com.orxtradev.nsebkapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606684153097-5b4calvjr0vtscqf7bb20ld32jd66vg2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.orxtradev.nsebkapp",
+            "certificate_hash": "238967f33c70fdf646b3dbc4f9e7dc3c5153b95c"
+          }
+        },
+        {
+          "client_id": "606684153097-1ph7vhbg15d89jlfop06t9rfhf69vk5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoMhSmGbizjAbLSzX1wMKH7Fvf8LdgRb8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606684153097-1ph7vhbg15d89jlfop06t9rfhf69vk5o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "606684153097-okccl5hgk7sfis8pdprat776q3o8flfu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.OrxtraDev.nasebakApp"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

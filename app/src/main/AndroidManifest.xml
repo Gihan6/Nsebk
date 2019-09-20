@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.RiyadSoftware.nsebkapp">
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".activities.AfterSkip"></activity>
+        <activity android:name=".activities.NewPassword" />
+        <activity android:name=".activities.VerifyForgetPassword" />
+        <activity android:name=".Ui.Register.VerifyActivity" />
+        <activity
+            android:name=".activities.WinnerActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activities.ContactUs" />
+        <activity android:name=".activities.AboutUs" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Register"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activities.Login" />
+        <activity android:name=".activities.ResetPassword" />
+        <activity android:name=".activities.MainActivity2" />
+        <activity android:name=".activities.Privacy" />
+        <activity android:name=".activities.Conditions" />
+        <activity android:name=".activities.MyInterests" />
+        <activity android:name=".activities.MainCategory">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SubCategActivity" />
+        <activity android:name=".activities.MyAccount" />
+        <activity android:name=".activities.MyDeals" />
+        <activity android:name=".activities.AccountInfos" />
+        <activity android:name=".activities.MyAddresses" />
+        <activity android:name=".activities.ShippingDates" />
+        <activity
+            android:name=".activities.Buy"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.Winner"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activities.Payment" />
+        <activity android:name=".activities.FinishDeal" />
+        <activity android:name=".activities.Shipping_buy" />
+        <activity android:name=".activities.LanguageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ProductsSubActivity" />
+        <activity android:name=".activities.SettingActivity" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#642748</color>
+    <color name="colorPrimaryDark">#642748</color>
+    <!--<color name="colorPrimaryDark">#632647</color>-->
+    <color name="colorAccent">#E09440</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+<color name="gray">#4AE0DCDC</color>
+
+
+
+    <color name="green">#FF337321</color>
+
+
+    <color name="login_google">#E74C3C</color>
+
+
+
+</resources>
