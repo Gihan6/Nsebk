@@ -185,6 +185,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
 
         mHomePresenter.getHomeData(new HomeRequest(pref.getUserLogged().getRemember_token()));
 
+
     }
 
     private void getDataForGrid() {

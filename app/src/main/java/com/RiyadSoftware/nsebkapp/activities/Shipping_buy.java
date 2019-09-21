@@ -118,8 +118,7 @@ public class Shipping_buy extends BaseActivity implements PackagesSubView {
     @Override
     public void afterBuy(ChargeResponse packageResponse) {
 
-        pref.setUserLogged(new Gson().toJson(packageResponse));
-
+      //  pref.setUserLogged(new Gson().toJson(packageResponse));
 
         showDialog();
     }
