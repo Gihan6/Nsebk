@@ -281,11 +281,11 @@ public class MainActivity2 extends BaseActivity implements MainView,
     protected void onResume() {
         super.onResume();
 
-        if (pref.getUserLogged().getPoints() != null)
-            txtPointsNum.setText("" + Integer.parseInt(txtPointsNum.getText().toString()) + Integer.parseInt(pref.getUserLogged().getPoints()));
+      //  if (pref.getUserLogged().getPoints() != null)
+        //    txtPointsNum.setText("" +pref.getUserPointsFromPk());
 
-        if (pref.getUserLogged().getCoupons() != null)
-            txtTicketsNum.setText("" + Integer.parseInt(txtTicketsNum.getText().toString()) + Integer.parseInt(pref.getUserLogged().getCoupons()));
+       // if (pref.getUserLogged().getCoupons() != null)
+            //txtTicketsNum.setText("" +pref.getUserLogged().getCoupons());
 
     }
 

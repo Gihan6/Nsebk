@@ -59,6 +59,18 @@ public class HomeModel {
         @Expose
         private String image;
 
+        @SerializedName("link")
+        @Expose
+        private String link;
+
+        public String getLink() {
+            return link;
+        }
+
+        public void setLink(String link) {
+            this.link = link;
+        }
+
         public String getVideo() {
             return video;
         }

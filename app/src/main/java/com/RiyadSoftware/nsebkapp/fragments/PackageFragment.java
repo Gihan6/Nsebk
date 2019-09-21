@@ -179,8 +179,9 @@ public class PackageFragment extends BaseFragment implements PackagesSubView, Sh
     @Override
     public void afterBuy(ChargeResponse packageResponse) {
         if (packageResponse.getSuccess().equalsIgnoreCase("success")) {
-            SharedPrefDueDate pref = new SharedPrefDueDate(getActivity());
-            pref.setUserLogged(new Gson().toJson(packageResponse));
+           // SharedPrefDueDate pref = new SharedPrefDueDate(getActivity());
+           // pref.setUserPointsFromPk(packageResponse.getData().getPoints());
+            //pref.setUserCouponsFromPk(packageResponse.getData().get);
             showDialog();
         } else {
             Toast.makeText(getActivity(), "" + packageResponse.getErrors().toString(), Toast.LENGTH_SHORT).show();

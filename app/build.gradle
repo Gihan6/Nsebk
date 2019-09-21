@@ -66,6 +66,7 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
 
 
+    //noinspection GradleCompatible
     implementation 'com.google.firebase:firebase-auth:16.1.0'
     implementation 'com.google.firebase:firebase-messaging:17.3.4'
     implementation 'me.relex:circleindicator:2.1.0'

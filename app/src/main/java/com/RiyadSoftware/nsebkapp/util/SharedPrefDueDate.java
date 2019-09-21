@@ -12,14 +12,18 @@ import com.google.gson.Gson;
 
 import java.util.Locale;
 
+import javax.inject.Inject;
+
 public class SharedPrefDueDate {
     // LogCat tag
     private static String TAG = SharedPrefDueDate.class.getSimpleName();
 
     // Shared Preferences
     SharedPreferences pref;
+    SharedPreferences prefUpdates;
 
     Editor editor;
+    Editor editorUpdates;
     Context _context;
 
     // Shared pref mode
@@ -27,6 +31,7 @@ public class SharedPrefDueDate {
 
     // Shared preferences file name
     private static final String PREF_NAME = "NesbkApp";
+    private static final String PREF_NAME_updates = "NesbkAppUpdates";
 
     private static final String PERSON_ID_CODE = "PERSON_ID";
     private static final String USER_OBJECT = "user_object";
@@ -35,7 +40,10 @@ public class SharedPrefDueDate {
     public SharedPrefDueDate(Context context) {
         this._context = context;
         pref = _context.getSharedPreferences(PREF_NAME, PRIVATE_MODE);
+        prefUpdates = _context.getSharedPreferences(PREF_NAME_updates, PRIVATE_MODE);
+
         editor = pref.edit();
+        editorUpdates = prefUpdates.edit();
     }
 
 
@@ -131,6 +139,36 @@ public class SharedPrefDueDate {
         editor.commit();
 
     }
+    public void setUserPointsFromPk(String pointsFromPk) {
+
+        editorUpdates.putString("points_pk", pointsFromPk);
+        // commit changes
+        editorUpdates.commit();
+
+    }
+    public int getUserPointsFromPk() {
+
+
+        return Integer.parseInt(prefUpdates.getString("points_pk", null));
+        // commit changes
+
+    }
+
+    public void setUserCouponsFromPk(String couponsFromPk) {
+
+        editorUpdates.putString("coupons_pk", couponsFromPk);
+        // commit changes
+        editorUpdates.commit();
+
+    }
+
+    public int getUserCouponsFromPk() {
+
+        return Integer.parseInt(prefUpdates.getString("coupons_pk", null));
+        // commit changes
+
+    }
+
     public void clear(){
         editor.clear();
         editor.commit();

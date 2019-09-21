@@ -149,7 +149,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
         mHomePresenter.attachView(this);
         pref = new SharedPrefDueDate(getContext());
 
-        mHomePresenter.getCurrenciesList(pref.getUserLogged().getRemember_token());
+       // mHomePresenter.getCurrenciesList(pref.getUserLogged().getRemember_token());
 
         if (pref.getLanguage().equals("ar")) {
             linearDeals.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
