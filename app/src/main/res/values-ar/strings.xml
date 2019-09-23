@@ -4,7 +4,6 @@
     <!-- TODO: Remove or change this placeholder text -->
 
 
-    <string-array name="gavor_array"></string-array>
     <string name="sar">ريال</string>
     <string name="points">نقاط</string>
     <string name="drawer_open" translatable="false">DrawerOpen</string>
@@ -16,10 +15,10 @@
     <string name="title_register_two">الخطوة الثانية</string>
     <string name="save">حفظ</string>
     <string name="clearify_update_string">عند تعديل الصفقه سيتم خصم %1$s من رصيدك و المبلغ المدفوع القديم كان %2$s</string>
-    <!--<string name="already_part">انت بالفعل مشترك في هذه الصفقه , السعر الذي ادخلته مسبقا %1$s ريال يمكنك تعديل السعر القديم بادخال سعرك الجديد والضغط علي تعديل </string>-->
     <string name="already_part">انت بالفعل مشترك في هذه الصفقه , السعر الذي ادخلته مسبقا %1$s  يمكنك تعديل السعر القديم بادخال سعرك الجديد والضغط علي تعديل </string>
-
+    <!--<string name="already_part">انت بالفعل مشترك في هذه الصفقه , السعر الذي ادخلته مسبقا %1$s ريال يمكنك تعديل السعر القديم بادخال سعرك الجديد والضغط علي تعديل </string>-->
     <string name="id_number">رقم العضوية</string>
+
     <string name="points_rassed">رصيد النقاط</string>
     <string name="kassaem_balance">رصيد القسائم</string>
     <string name="kassaem">عدد القسائم</string>
@@ -65,11 +64,11 @@
     <string name="login">تسجيل الدخول</string>
     <string name="wrong_login">الايميل خاطئ او الباسورد </string>
     <string name="enter_valid_email">الايميل خاطئ  </string>
-
     <string name="forgot_pass" tools:ignore="ExtraTranslation"><u>نسيت كلمة المرور ؟</u></string>
 
-
     <string name="navmain">الرئيسية</string>
+
+
     <string name="maincategory">الاقسام الرئيسية</string>
     <string name="navinterests">اهتماماتى</string>
     <string name="navaccount">حسابى</string>
@@ -137,10 +136,10 @@
     <string name="update">تعديل</string>
     <string name="continu">استمرار</string>
     <string name="back">رجوع</string>
-    <string name="clearify_string">عند دخولك الصفقة سيتم خصم عدد %1$s  تذكرة من رصيد التذاكر لديك . و سيتم منحك عدد نقاط %2$s</string>
+    <string name="clearify_string"> عند دخولك الصفقة سيتم حسم  %1$s  تذاكر من رصيدك وستحصل علي  %2$s ‫نقطة‬ مكافآت </string>
     <string name="clearify_string_sucess">Congrats you entered the deal ticket price is %1$s! You will be given %2$s free Vouchers.</string>
-
     <string name="home_Address">عنوان المنزل</string>
+
     <string name="address">العنوان</string>
     <string name="street_name">رقم الشارع</string>
     <string name="home_number">رقم المنزل</string>
@@ -148,19 +147,45 @@
     <string name="address_details2"> تفاصيل العنوان 2</string>
     <string name="city_street">المدينة - الحي</string>
     <string name="zip">Zip Code</string>
+    <string name="available">متوفر</string>
     <!--<string name="price_discount_points">سعرك = ( السعر المكتوب  - عدد النقاط )</string>-->
 
 
-    <string name="available">متوفر</string>
-
     <string name="sar_currency">ريال</string>
-    <string name="dollar_currency">دولار</string>
 
+    <string name="dollar_currency">دولار</string>
     <string name="welcome">مرحبا </string>
+
     <string name="header_tickets">التذاكر</string>
     <string name="header_rewards_points">نقاط المكافآت</string>
-
     <string name="language">اللغة</string>
+
+    <string name="enterVerifyCode">ادخل كود التحقق المرسل لبريدك الالكتروني :</string>
+    <string name="verify">تحقق</string>
+    <string name="handleError">"    الصفقة منتهية بالفعل "</string>
+    <string name="ticket">تذكرة</string>
+    <string name="point">نقطة</string>
+    <string name="coupons">الباقات</string>
+    <string name="rsa">ريال سعودي</string>
+    <string name="bill">مبلغ الفاتورة</string>
+    <string name="credit_number">رقم البطاقة</string>
+    <string name="finish_date">تاريخ الانتهاء</string>
+    <string name="validateCode">رقم التحقق ccv</string>
+    <string name="nameOfOwner">اسم حامل البطاقة</string>
+    <string name="credit">بطاقة ائتمانية</string>
+    <string name="ok">تاكيد</string>
+    <string name="product_information">‫‬ ‫معلومات الصفقة‬</string>
+    <string name="product_details"> ‬ ‫تفاصيل ‫المنتج ‬</string>
+    <string name="price_discount_points">السعر بعد خصم النقاط </string>
+    <string name="finish">انتهت </string>
+    <string name="finish_deal">الصفقة انتهت</string>
+    <string name="deal_winer"> الفائز بالصفقة : </string>
+    <string name="finish_buy">اتمام عمليه الشراء</string>
+    <string name="good_luck_next_time">حظ اوفر الصفقات الاخري </string>
+    <string name="pay">ادفع</string>
+
+
+    <string-array name="gavor_array"></string-array>
     <string-array name="spinne_array">
         <item>الرياض</item>
         <item>الرياض</item>
@@ -170,15 +195,6 @@
         <item>الرياض</item>
         <item>الرياض</item>
     </string-array>
-    <string name="enterVerifyCode">ادخل كود التحقق المرسل لبريدك الالكتروني :</string>
-    <string name="verify">تحقق</string>
-    <string name="handleError">"    الصفقة منتهية بالفعل "</string>
-    <string name="ticket">تذكرة</string>
-    <string name="point">نقطة</string>
-    <string name="coupons">الباقات</string>
-    <string name="rsa">ريال سعودي</string>
-    <string name="bill">مبلغ الفاتورة</string>
-
 
 
 </resources>

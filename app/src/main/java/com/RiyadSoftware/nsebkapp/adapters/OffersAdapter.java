@@ -2,6 +2,7 @@ package com.RiyadSoftware.nsebkapp.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -81,6 +82,16 @@ public class OffersAdapter extends RecyclerView.Adapter<OffersAdapter.ViewHolder
                 holder.videoView.requestFocus();
                 holder.videoView.start();
             }
+
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(contents.get(position).getLink()));
+                    mContext.startActivity(i);
+                }
+            });
         }
 
         }

@@ -124,6 +124,7 @@ public class CurrentDealsAdapter extends RecyclerView.Adapter<CurrentDealsAdapte
                 Intent intent = new Intent(context, Buy.class);
                 intent.putExtra("data", data.get(postion).getDeal_id());
                 intent.putExtra("points", data.get(postion).getPoints());
+
                 context.startActivity(intent);
             }
         });

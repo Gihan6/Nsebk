@@ -9,6 +9,7 @@ import com.RiyadSoftware.nsebkapp.Ui.Inteerst.InterestResponseModel;
 import com.RiyadSoftware.nsebkapp.Ui.Inteerst.SaveInterestRequest;
 import com.RiyadSoftware.nsebkapp.Ui.Reset.ForgetResponse;
 import com.RiyadSoftware.nsebkapp.Ui.Terms.TermsResponse;
+import com.RiyadSoftware.nsebkapp.activities.FinishDeal;
 import com.RiyadSoftware.nsebkapp.activities.VerifyForgetPassword;
 import com.RiyadSoftware.nsebkapp.data.models.AddFavRequest;
 import com.RiyadSoftware.nsebkapp.data.models.AddFavResponse;
@@ -25,6 +26,8 @@ import com.RiyadSoftware.nsebkapp.data.models.CityRequest;
 import com.RiyadSoftware.nsebkapp.data.models.DealDetailsRequest;
 import com.RiyadSoftware.nsebkapp.data.models.DealDetailsResponse;
 import com.RiyadSoftware.nsebkapp.data.models.DealsResponseModel;
+import com.RiyadSoftware.nsebkapp.data.models.Finishdeal.FinishDealRequest;
+import com.RiyadSoftware.nsebkapp.data.models.Finishdeal.FinishDealResponse;
 import com.RiyadSoftware.nsebkapp.data.models.HomeModel;
 import com.RiyadSoftware.nsebkapp.data.models.HomeRequest;
 import com.RiyadSoftware.nsebkapp.data.models.LoginRequest;
@@ -93,7 +96,9 @@ public class DataManager {
     public Observable<HomeModel> getHomeData(HomeRequest homeRequest) {
         return mRibotsService.getHomePage(homeRequest);
     }
-
+    public Observable<FinishDealResponse> getFinishDealData(FinishDealRequest homeRequest) {
+        return mRibotsService.getFinishDeal(homeRequest);
+    }
     public Observable<DealsResponseModel> getProducts(String subID) {
         return mRibotsService.getProducts(subID);
     }

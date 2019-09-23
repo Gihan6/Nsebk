@@ -7,11 +7,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.RiyadSoftware.nsebkapp.R;
-import com.RiyadSoftware.nsebkapp.Ui.Terms.TermsResponse;
+import com.RiyadSoftware.nsebkapp.models.WinerModel;
 
 import java.util.List;
 
@@ -22,38 +21,40 @@ public class WinnersAdadper extends RecyclerView.Adapter<WinnersAdadper.ViewHold
 
 
     Context context;
-    List<String> dataLiat;
+    List<WinerModel> dataList;
 
-    public WinnersAdadper(Context context, List<String> dataLiat) {
+    public WinnersAdadper(Context context, List<WinerModel> dataList) {
         this.context = context;
-        this.dataLiat = dataLiat;
+        this.dataList = dataList;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
-        View view = layoutInflater.inflate(R.layout.winner_item, viewGroup, false);
+        View view = layoutInflater.inflate(R.layout.single_layout_winer, viewGroup, false);
         ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder viewHolder, final int i) {
-        viewHolder.winner_name.setText(dataLiat.get(i));
-
-
+        viewHolder.winner_name.setText(dataList.get(i).getWinerNAme());
+        viewHolder.price.setText(dataList.get(i).getPrice());
     }
 
     @Override
     public int getItemCount() {
-        return dataLiat == null ? 0 : dataLiat.size();
+        return dataList == null ? 0 : dataList.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
 
-        @BindView(R.id.winner_name)
+        @BindView(R.id.tv_winerName)
         TextView winner_name;
+        @BindView(R.id.tv_price)
+        TextView price;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);

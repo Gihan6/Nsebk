@@ -15,38 +15,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/buy_button"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/corner_background1"
-                android:gravity="center"
-                android:paddingTop="3dp"
-                android:paddingBottom="3dp"
-                android:text="@string/done_"
-                android:textColor="@color/white"
-                android:textSize="14sp" />
-
-            <!--<FrameLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="150dp"-->
-            <!--android:layout_marginTop="2dp">-->
-
-            <!--<ImageView-->
-            <!--android:id="@+id/productIV"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:scaleType="centerCrop" />-->
-
-            <!--<ImageView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_margin="16dp"-->
-            <!--android:src="@drawable/offer_icon" />-->
-            <!--</FrameLayout>-->
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -239,7 +207,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="8dp"
-                        android:text="Product Information"
+                        android:text="@string/product_information"
                         android:textColor="@color/colorPrimary"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -262,13 +230,15 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="8dp"
-                        android:text=" Product Details"
+                        android:text="@string/product_details"
                         android:textColor="@color/colorPrimary"
                         android:textSize="18sp" />
                 </LinearLayout>
 
 
                 <LinearLayout
+
+                    android:visibility="gone"
                     android:id="@+id/component_holder"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -374,6 +344,35 @@
 
 
             </RelativeLayout>
+            <TextView
+
+                android:id="@+id/text_price_after_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="2"
+                android:singleLine="false"
+                android:text="@string/price_discount_points"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+            <Button
+
+                android:enabled="false"
+                android:clickable="false"
+                android:id="@+id/buy_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/corner_background1"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/done_"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
 
             <RelativeLayout
                 android:id="@+id/clearify_holder"
@@ -436,18 +435,7 @@
                     android:textSize="14sp" />
             </RelativeLayout>
 
-            <TextView
 
-                android:id="@+id/text_price_after_decrease"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:lines="2"
-                android:singleLine="false"
-                android:text="@string/price_discount_points"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16sp" />
 
             <View
                 android:layout_width="match_parent"

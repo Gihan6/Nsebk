@@ -38,8 +38,8 @@ public class Winner extends AppCompatActivity {
             if (winnerList == null || winnerList.isEmpty()) {
                 top_five_empty.setVisibility(View.VISIBLE);
             } else {
-                winners.setLayoutManager(new LinearLayoutManager(this));
-                winners.setAdapter(new WinnersAdadper(this, winnerList));
+//                winners.setLayoutManager(new LinearLayoutManager(this));
+//                winners.setAdapter(new WinnersAdadper(this, winnerList));
             }
         }
 

@@ -27,6 +27,8 @@ import com.RiyadSoftware.nsebkapp.data.models.CityRequest;
 import com.RiyadSoftware.nsebkapp.data.models.DealDetailsRequest;
 import com.RiyadSoftware.nsebkapp.data.models.DealDetailsResponse;
 import com.RiyadSoftware.nsebkapp.data.models.DealsResponseModel;
+import com.RiyadSoftware.nsebkapp.data.models.Finishdeal.FinishDealRequest;
+import com.RiyadSoftware.nsebkapp.data.models.Finishdeal.FinishDealResponse;
 import com.RiyadSoftware.nsebkapp.data.models.HomeModel;
 import com.RiyadSoftware.nsebkapp.data.models.HomeRequest;
 import com.RiyadSoftware.nsebkapp.data.models.LoginRequest;
@@ -203,6 +205,8 @@ public interface RibotsService {
     Observable<CurrencyResponse> getCurrencies(@Body CurrencyRequest currencyRequest);
 
 
+    @POST("finishDeal")
+    Observable<FinishDealResponse> getFinishDeal(@Body FinishDealRequest request);
 
 
 

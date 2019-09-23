@@ -11,6 +11,7 @@ import java.util.List;
 
 public interface HomeView  extends MvpView {
     void getHomeData(HomeModel homeModel);
+
     void DealAddedToFav(AddFavResponse addFavResponse);
 
     void currenciesList(CurrencyResponse data);

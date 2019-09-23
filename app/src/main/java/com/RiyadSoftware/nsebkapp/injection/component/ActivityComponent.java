@@ -6,6 +6,7 @@ import com.RiyadSoftware.nsebkapp.activities.AccountInfos;
 import com.RiyadSoftware.nsebkapp.activities.Buy;
 import com.RiyadSoftware.nsebkapp.activities.Conditions;
 import com.RiyadSoftware.nsebkapp.activities.ContactUs;
+import com.RiyadSoftware.nsebkapp.activities.FinishDeal;
 import com.RiyadSoftware.nsebkapp.activities.Login;
 import com.RiyadSoftware.nsebkapp.activities.MainActivity2;
 import com.RiyadSoftware.nsebkapp.activities.MainCategory;
@@ -87,5 +88,8 @@ public interface ActivityComponent {
     void inject(VerifyForgetPassword verifyForgetPassword);
 
     void inject(NewPassword newPassword);
+
+    void inject(FinishDeal finishDeal);
+
 
 }

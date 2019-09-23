@@ -71,6 +71,7 @@ public class AddTicketPresenter extends BasePresenter<AddTicketMvpView> {
                     }
                 });
     }
+
     public void getDealDetails(DealDetailsRequest dealDetailsRequest) {
         getMvpView().showLoader();
         mDataManager.getDealDetails(dealDetailsRequest)
@@ -86,7 +87,6 @@ public class AddTicketPresenter extends BasePresenter<AddTicketMvpView> {
                     public void onNext(@NonNull DealDetailsResponse homeModel) {
 
                         getMvpView().showDetails(homeModel);
-
                         getMvpView().hideLoader();
 
                     }
@@ -104,5 +104,6 @@ public class AddTicketPresenter extends BasePresenter<AddTicketMvpView> {
                     }
                 });
     }
+
 
 }

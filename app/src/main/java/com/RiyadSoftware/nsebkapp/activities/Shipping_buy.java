@@ -23,7 +23,6 @@ import com.RiyadSoftware.nsebkapp.data.models.OffersResponseModel;
 import com.RiyadSoftware.nsebkapp.data.models.PackageResponse;
 import com.RiyadSoftware.nsebkapp.data.models.coupon.CouponResponse;
 import com.RiyadSoftware.nsebkapp.util.SharedPrefDueDate;
-import com.google.gson.Gson;
 
 import javax.inject.Inject;
 
@@ -41,6 +40,23 @@ public class Shipping_buy extends BaseActivity implements PackagesSubView {
     TextView points_label;
     @BindView(R.id.buy_vg)
     ViewGroup buy_vg;
+
+    //---------
+
+    @BindView(R.id.btn_tatbiq)
+    Button btn_tatbiq;
+    @BindView(R.id.et_sumOfBill)
+    EditText et_sumOfBill;
+    @BindView(R.id.et_numOFCredit)
+    EditText et_CreditNum;
+    @BindView(R.id.et_validateNum)
+    EditText et_validateNum;
+    @BindView(R.id.et_finishDate)
+    EditText et_finisDate;
+    @BindView(R.id.et_owner)
+    EditText et_ownerOFCredit;
+
+    //---------
 
 
     EditText editCoupon;
@@ -118,7 +134,7 @@ public class Shipping_buy extends BaseActivity implements PackagesSubView {
     @Override
     public void afterBuy(ChargeResponse packageResponse) {
 
-      //  pref.setUserLogged(new Gson().toJson(packageResponse));
+        //  pref.setUserLogged(new Gson().toJson(packageResponse));
 
         showDialog();
     }

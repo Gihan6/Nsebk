@@ -31,7 +31,7 @@ public class ContactUs extends BaseActivity implements ContactMvpView {
     @BindView(R.id.name_et)
     EditText name_et;
     @BindView(R.id.phone_et)
-    EditText phone_et;
+    TextView phone_et;
 
     @BindView(R.id.email_et)
     EditText email_et;
@@ -70,6 +70,8 @@ public class ContactUs extends BaseActivity implements ContactMvpView {
         if (pref.getUserLogged() != null) {
             phone_et.setText(pref.getUserLogged().getMobile());
             email_et.setText(pref.getUserLogged().getEmail());
+            email_tv.setText(pref.getUserLogged().getEmail());
+
         }
 
         mPresenter.getAbout();
@@ -209,7 +211,7 @@ public class ContactUs extends BaseActivity implements ContactMvpView {
     public void showTerms(TermsResponse response) {
         mResponse = response;
 //        phone_tv_1.setText(response.getContacts().get);
-        email_tv.setText(mResponse.getContacts().getEmail());
+//        email_tv.setText(mResponse.getContacts().getEmail());
         phone_tv_2.setText(mResponse.getContacts().getPhone2());
         phone_tv_1.setText(mResponse.getContacts().getPhone1());
     }

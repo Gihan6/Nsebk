@@ -187,6 +187,10 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
     @OnClick(R.id.continue_tv)
     public void clearify() {
         clearify_holder.setVisibility(View.GONE);
+        buy_button.setEnabled(true);
+        buy_button.setClickable(true);
+        buy_button.setText(getString(R.string.ok));
+
     }
 
 
@@ -573,10 +577,16 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
 
             //----
             tv_title.setText(dealDetailsResponse.getData().getDealDetails().getTitle());
+            clearify_tv.setText("عند دخولك الصفقة سيتم حسم " + dealDetailsResponse.getData()
+                    .getDealDetails().getPoints() + " تذاكر من رصيدك وستحصل علي " +
+                    dealDetailsResponse.getData().getDealDetails().getTenderCoupon() + "نقطه مكافآت");
             //----
+
             time.setText(dealDetailsResponse.getData().getDealDetails().getExpiryDate().split(" ")[1]);
+
             date.setText(getCountOfDays(currentDate("yyyy-MM-dd"),
                     dealDetailsResponse.getData().getDealDetails().getExpiryDate().split(" ")[0]));
+            date.setText("");
 
             info_tv.setText(dealDetailsResponse.getData().getDealDetails().getInfo());
             component_tv.setText(dealDetailsResponse.getData().getDealDetails().getTitle());
@@ -676,10 +686,10 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
         @Override
         public void onTick(long millisUntilFinished) {
             long millis = millisUntilFinished;
-            String hms = (TimeUnit.MILLISECONDS.toDays(millis)) + "  Day  "
-                    + (TimeUnit.MILLISECONDS.toHours(millis) - TimeUnit.DAYS.toHours(TimeUnit.MILLISECONDS.toDays(millis)) + " hours ")
-                    + (TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)) + " Minutes "
-                    + (TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis))) + " Seconds ");
+            String hms = "Days " + (TimeUnit.MILLISECONDS.toDays(millis)) + "        "
+                    + (TimeUnit.MILLISECONDS.toHours(millis) - TimeUnit.DAYS.toHours(TimeUnit.MILLISECONDS.toDays(millis)) + " : ")
+                    + (TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)) + " : "
+                    + (TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis))));
             time.setText(/*context.getString(R.string.ends_in) + " " +*/ hms);
         }
     }

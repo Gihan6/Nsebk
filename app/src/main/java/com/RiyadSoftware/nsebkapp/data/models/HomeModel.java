@@ -62,6 +62,20 @@ public class HomeModel {
         @SerializedName("link")
         @Expose
         private String link;
+        @SerializedName("video")
+        @Expose
+        private String video;
+        @SerializedName("time")
+        @Expose
+        private String time;
+
+        public String getTime() {
+            return time;
+        }
+
+        public void setTime(String time) {
+            this.time = time;
+        }
 
         public String getLink() {
             return link;
@@ -79,9 +93,7 @@ public class HomeModel {
             this.video = video;
         }
 
-        @SerializedName("video")
-        @Expose
-        private String video;
+
 
 
         public String getImage() {

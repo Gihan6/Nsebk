@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.RiyadSoftware.nsebkapp.R;
 import com.RiyadSoftware.nsebkapp.activities.Buy;
+import com.RiyadSoftware.nsebkapp.activities.FinishDeal;
 import com.RiyadSoftware.nsebkapp.data.models.HomeModel;
 import com.RiyadSoftware.nsebkapp.util.SharedPrefDueDate;
 import com.bumptech.glide.Glide;
@@ -93,8 +94,11 @@ public class DealsAdapter extends RecyclerView.Adapter<DealsAdapter.ViewHolder> 
 
 
         holder.titleTV.setText(data.get(postion).getTitle());
+
         holder.product_price.setText(data.get(postion).getInitial_price() + " " + context.getString(R.string.sar));
+
         holder.points_tv.setText(data.get(postion).getPoints() + " " + context.getString(R.string.tickets));
+
 //        holder.points_tv.setText(data.get(postion).getPoints() + " " + context.getString(R.string.points));
         if (isCommingSoon) {
             holder.time_to_end.setText(context.getString(R.string.comming_soon));
@@ -103,7 +107,7 @@ public class DealsAdapter extends RecyclerView.Adapter<DealsAdapter.ViewHolder> 
             String date = data.get(postion).getExpiry_date().substring(0,data.get(postion).getExpiry_date().indexOf(":")-2);
             String counter = data.get(postion).getExpiry_date().substring(data.get(postion).getExpiry_date().indexOf(":")-2 ,data.get(postion).getExpiry_date().length());
 
-                holder.time_to_end.setText(date + "          "+counter);
+                holder.time_to_end.setText(context.getString(R.string.finish));
         }
         }
         //holder.points_lbl.setText("+" + data.get(postion).getTender_cost() == null ? "0" : data.get(postion).getTender_cost());
@@ -123,7 +127,7 @@ public class DealsAdapter extends RecyclerView.Adapter<DealsAdapter.ViewHolder> 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, Buy.class);
+                Intent intent = new Intent(context, FinishDeal.class);
                 intent.putExtra("data", data.get(postion).getDeal_id());
                 intent.putExtra("points", data.get(postion).getPoints());
                 context.startActivity(intent);

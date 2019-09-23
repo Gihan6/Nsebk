@@ -59,6 +59,9 @@
             android:scaleType="centerCrop"
             android:src="@drawable/mc11" />
 
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,7 +69,8 @@
             android:textStyle="bold"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/reward_icon"
+
             android:text=""
             android:id="@+id/points_lbl"
             android:gravity="center"
