@@ -672,11 +672,15 @@ public class Register extends BaseActivity implements RegisterView {
             countrySP.setAdapter(new CustomArrayAdapter(this, R.layout.custom_spinner_item
                     , coInnerData));
 
+            //--------------------here put country code--------------
+
+
 
             countrySP.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                     mRegisterPresenter.getCities(new CityRequest(coInnerData.get(i).getId()));
+
                 }
 
                 @Override

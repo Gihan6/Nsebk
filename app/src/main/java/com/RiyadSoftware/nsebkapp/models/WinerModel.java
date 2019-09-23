@@ -4,6 +4,10 @@ public class WinerModel {
     String winerNAme;
     String price;
 
+    public WinerModel(String winerNAme, String price) {
+        this.winerNAme = winerNAme;
+        this.price = price;
+    }
 
     public String getWinerNAme() {
         return winerNAme;

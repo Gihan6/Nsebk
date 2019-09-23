@@ -7,9 +7,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.PagerSnapHelper;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
@@ -108,6 +106,15 @@ public class FinishDeal extends BaseActivity implements FinishDealView {
         layoutManager = new LinearLayoutManager(this);
         rv_winner.setLayoutManager(layoutManager);
         adadper = new WinnersAdadper(this, winners);
+
+        winners = new ArrayList<>();
+        winners.add(new WinerModel("Gihan", "1236"));
+        winners.add(new WinerModel("Gihan", "1236"));
+        winners.add(new WinerModel("Gihan", "1236"));
+        winners.add(new WinerModel("Gihan", "1236"));
+        winners.add(new WinerModel("Gihan", "1236"));
+        rv_winner.setAdapter(adadper);
+
     }
 
 
@@ -190,15 +197,15 @@ public class FinishDeal extends BaseActivity implements FinishDealView {
 
         Button btn_cancel = dialog.findViewById(R.id.close);
         Button btn_pay = dialog.findViewById(R.id.btn_pay);
-        EditText et_creditNum=dialog.findViewById(R.id.et_numOFCredit);
-        EditText et_finishDate=dialog.findViewById(R.id.et_finishDate);
-        EditText et_validateNun=dialog.findViewById(R.id.et_validateNum);
-        EditText et_name=dialog.findViewById(R.id.et_numOFCredit);
+        EditText et_creditNum = dialog.findViewById(R.id.et_numOFCredit);
+        EditText et_finishDate = dialog.findViewById(R.id.et_finishDate);
+        EditText et_validateNun = dialog.findViewById(R.id.et_validateNum);
+        EditText et_name = dialog.findViewById(R.id.et_numOFCredit);
 
         btn_cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"cancel",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "cancel", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
 
             }
@@ -207,7 +214,7 @@ public class FinishDeal extends BaseActivity implements FinishDealView {
         btn_pay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Should pay",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Should pay", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
             }
         });
