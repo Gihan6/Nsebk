@@ -76,6 +76,8 @@ public class Register extends BaseActivity implements RegisterView {
     TextView s2TV;
     @BindView(R.id.s3TV)
     TextView s3TV;
+    @BindView(R.id.tv_code)
+    TextView tv_code;
 
 
     //init the three parent
@@ -361,7 +363,7 @@ public class Register extends BaseActivity implements RegisterView {
                     String.valueOf(citiesData.get(cities_sp.getSelectedItemPosition()).getCity_id()),
                     jobET.getText().toString(),
                     birthET.getText().toString(),
-                    phoneET.getText().toString()
+                    tv_code.getText()+phoneET.getText().toString()
             );
             mRegisterPresenter.register(registerRequest);
 
@@ -681,6 +683,11 @@ public class Register extends BaseActivity implements RegisterView {
                 public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                     mRegisterPresenter.getCities(new CityRequest(coInnerData.get(i).getId()));
 
+                    if (coInnerData.get(i).getCountry_code()!=null&&!coInnerData.get(i).getCountry_code().equals("")){
+                        tv_code.setText(coInnerData.get(i).getCountry_code());
+                    }else {
+                        tv_code.setText("");
+                    }
                 }
 
                 @Override
