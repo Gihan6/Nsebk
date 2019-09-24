@@ -47,17 +47,24 @@ public class RewardAdapter extends RecyclerView.Adapter<RewardAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int postion) {
+
+
         holder.bind(data.get(postion), listener);
+
         holder.points.setText(data.get(postion).getCoupons());
         holder.endTime.setText(context.getString(R.string.endedin)+" " + data.get(postion).getExpiry_date().split(" ")[0]);
-
-
         RequestOptions options = new RequestOptions();
         options.fallback(R.drawable.logo);
         options.placeholder(R.drawable.logo);
 
         Glide.with(context).load(data.get(postion).getImages()).apply(options).into(holder.image);
 
+        if (data.get(postion).getQuantity()==0){
+            holder.rewardBtn.setClickable(false);
+        }else {
+            holder.rewardBtn.setClickable(true);
+
+        }
         holder.quantityAvailableTxt.setText(""+data.get(postion).getQuantity());
 
 //        holder.rewardBtn.setOnClickListener(new View.OnClickListener() {
