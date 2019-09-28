@@ -150,6 +150,7 @@ public class SharedPrefDueDate {
 
 
         return Integer.parseInt(prefUpdates.getString("points_pk", null));
+
         // commit changes
 
     }

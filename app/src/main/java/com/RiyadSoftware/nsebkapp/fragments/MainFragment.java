@@ -194,9 +194,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
         parent.getViewTreeObserver().
                 addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
                                                                                 @Override
-                                                                                public void onScrollChanged() {
-
-                                                                                    if (!parent.canScrollVertically(1)) {
+                                                                                public void onScrollChanged() { if (!parent.canScrollVertically(1)) {
                                                                                         // bottom of scroll view
                                                                                         iv_refresh.setVisibility(View.VISIBLE);
                                                                                     }

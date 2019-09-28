@@ -102,8 +102,9 @@ public class MainActivity2 extends BaseActivity implements MainView,
         if (pref.getUserLogged().getUser_name() != null)
             txtProfileName.setText(getString(R.string.welcome) + "  " + pref.getUserLogged().getUser_name());
 
+        int cc= pref.getUserPointsFromPk()+Integer.parseInt(pref.getUserLogged().getPoints() );
         if (pref.getUserLogged().getPoints() != null)
-            txtPointsNum.setText("" + pref.getUserLogged().getPoints());
+            txtPointsNum.setText("" + cc);
 
         if (pref.getUserLogged().getCoupons() != null)
             txtTicketsNum.setText("" + pref.getUserLogged().getCoupons());
@@ -311,4 +312,17 @@ public class MainActivity2 extends BaseActivity implements MainView,
         startActivity(i);
 
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        int cc= pref.getUserPointsFromPk()+Integer.parseInt(pref.getUserLogged().getPoints() );
+        if (pref.getUserLogged().getPoints() != null)
+            txtPointsNum.setText("" + cc);
+
+        if (pref.getUserLogged().getCoupons() != null)
+            txtTicketsNum.setText("" + pref.getUserLogged().getCoupons());
+    }
 }
+
