@@ -34,36 +34,33 @@ public class CurrentDealsAdapter extends RecyclerView.Adapter<CurrentDealsAdapte
     AddToFavInterface2 addToFavInterface;
     boolean hideLike;
     boolean isCommingSoon;
+    String type="";
 
-    public CurrentDealsAdapter(Context context, List<HomeModel.DealModel> data, AddToFavInterface2 addToFavInterface, boolean isLinear) {
+    public CurrentDealsAdapter(Context context, List<HomeModel.DealModel> data,
+                               AddToFavInterface2 addToFavInterface, boolean isLinear) {
         this.context = context;
         this.data = data;
+
 
         this.mIsLinear = isLinear;
         this.addToFavInterface = addToFavInterface;
         pref = new SharedPrefDueDate(context);
+        type="0";//mean current
     }
 
-    public CurrentDealsAdapter(Context context, boolean isCommingSoon, List<HomeModel.DealModel> data, AddToFavInterface2 addToFavInterface, boolean isLinear) {
+    public CurrentDealsAdapter(Context context, boolean isCommingSoon,
+                               List<HomeModel.DealModel> data, AddToFavInterface2 addToFavInterface,
+                               boolean isLinear) {
         this.context = context;
         this.data = data;
         this.isCommingSoon = isCommingSoon;
-
         this.mIsLinear = isLinear;
         this.addToFavInterface = addToFavInterface;
         pref = new SharedPrefDueDate(context);
+        type="1";//mean future
+
     }
 
-    public CurrentDealsAdapter(Context context, List<HomeModel.DealModel> data,
-                               AddToFavInterface2 addToFavInterface, boolean isLinear, boolean hideLike) {
-        this.context = context;
-        this.data = data;
-
-        this.mIsLinear = isLinear;
-        this.hideLike = hideLike;
-        this.addToFavInterface = addToFavInterface;
-        pref = new SharedPrefDueDate(context);
-    }
 
     @NonNull
     @Override
@@ -124,6 +121,7 @@ public class CurrentDealsAdapter extends RecyclerView.Adapter<CurrentDealsAdapte
                 Intent intent = new Intent(context, Buy.class);
                 intent.putExtra("data", data.get(postion).getDeal_id());
                 intent.putExtra("points", data.get(postion).getPoints());
+                intent.putExtra("type", type);
 
                 context.startActivity(intent);
             }

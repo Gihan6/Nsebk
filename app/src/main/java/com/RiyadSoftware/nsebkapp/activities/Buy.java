@@ -128,6 +128,8 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
     String pointNumbers = null;
     private int currentPage = 0;
 
+    String type="";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -136,6 +138,9 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
 
         deal_id = getIntent().getIntExtra("data", 0);
         pointNumbers = getIntent().getStringExtra("points");
+        type=getIntent().getStringExtra("type");
+
+
         if (deal_id == 0) {
             Toast.makeText(this, getString(R.string.error_in_data), Toast.LENGTH_SHORT).show();
             return;
@@ -690,7 +695,14 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
                     + (TimeUnit.MILLISECONDS.toHours(millis) - TimeUnit.DAYS.toHours(TimeUnit.MILLISECONDS.toDays(millis)) + " : ")
                     + (TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)) + " : "
                     + (TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis))));
-            time.setText(/*context.getString(R.string.ends_in) + " " +*/ hms);
+
+           if (type.equals("0")){
+               time.setText(/*context.getString(R.string.ends_in) + " " +*/ hms);
+
+           }else if (type.equals("1")){
+               time.setText(getApplicationContext().getString(R.string.comming_soon) );
+
+           }
         }
     }
 }

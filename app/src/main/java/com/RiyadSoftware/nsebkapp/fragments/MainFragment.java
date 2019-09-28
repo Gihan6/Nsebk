@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -106,6 +107,8 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
 
     @BindView(R.id.linear_deals)
     LinearLayout linearDeals;
+    @BindView(R.id.refresh)
+    ImageView iv_refresh;
 
 
     HomeModel mHomeModel;
@@ -149,7 +152,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
         mHomePresenter.attachView(this);
         pref = new SharedPrefDueDate(getContext());
 
-       // mHomePresenter.getCurrenciesList(pref.getUserLogged().getRemember_token());
+        // mHomePresenter.getCurrenciesList(pref.getUserLogged().getRemember_token());
 
         if (pref.getLanguage().equals("ar")) {
             linearDeals.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
@@ -184,6 +187,27 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
         home_recyclerview.setNestedScrollingEnabled(false);
 
         mHomePresenter.getHomeData(new HomeRequest(pref.getUserLogged().getRemember_token()));
+
+
+        //************************
+
+        parent.getViewTreeObserver().
+                addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
+                                                                                @Override
+                                                                                public void onScrollChanged() {
+
+                                                                                    if (!parent.canScrollVertically(1)) {
+                                                                                        // bottom of scroll view
+                                                                                        iv_refresh.setVisibility(View.VISIBLE);
+                                                                                    }
+                                                                                    if (!parent.canScrollVertically(-1)) {
+                                                                                        // top of scroll view
+                                                                                        iv_refresh.setVisibility(View.GONE);
+
+
+                                                                                    }
+                                                                                }
+                                                                            });
 
 
     }
@@ -306,7 +330,8 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
                     home_recyclerview.setAdapter(currentDealsAdapter);
                 }
             } else {
-                futureRV.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
+                futureRV.setLayoutManager(new LinearLayoutManager(context,
+                        LinearLayoutManager.HORIZONTAL, false));
                 futureRV.setAdapter(currentDealsAdapter);
                 if (mHomeModel.getData().getComing_Deals().isEmpty()) {
                     futureempty.setVisibility(View.VISIBLE);
@@ -326,7 +351,8 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
         my_deals.setTextColor(getResources().getColor(R.color.colorPrimary));
 
         if (mHomeModel != null) {
-            currentDealsAdapter = new CurrentDealsAdapter(context, mHomeModel.getData().getNow_Deals(), this, gridView);
+            currentDealsAdapter = new CurrentDealsAdapter(context,
+                    mHomeModel.getData().getNow_Deals(), this, gridView);
             if (gridView) {
                 if (currentDealsAdapter.getItemCount() == 0) {
                     no_data_holder.setVisibility(View.VISIBLE);
@@ -547,5 +573,10 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
         mHomePresenter.addToFav(new AddFavRequest(pref.getUserLogged().getRemember_token(), dealID));
     }
 
+    @OnClick(R.id.refresh)
+    void refresh() {
+        mHomePresenter.getHomeData(new HomeRequest(pref.getUserLogged().getRemember_token()));
+        parent.scrollTo(0,0);
 
+    }
 }
