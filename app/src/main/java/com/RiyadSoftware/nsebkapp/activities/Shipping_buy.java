@@ -136,8 +136,10 @@ public class Shipping_buy extends BaseActivity implements PackagesSubView {
         if (packageResponse.getSuccess().equalsIgnoreCase("success")) {
 
             SharedPrefDueDate pref = new SharedPrefDueDate(this);
-            pref.setUserPointsFromPk(packageResponse.getData().getPoints());
-            //    pref.setUserCouponsFromPk(packageResponse.getData().get);
+
+            pref.setUserPointsFromPk(""+(pref.getUserPointsFromPk() + Integer.parseInt(points_label.getText().toString())));
+
+            pref.setUserCouponsFromPk(""+(pref.getUserCouponsFromPk() + Integer.parseInt(kassaem_label.getText().toString())));
 
             showDialog();
         }

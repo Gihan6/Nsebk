@@ -445,7 +445,7 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
     void buy_button() {
         if (priceET.getText().toString().trim().isEmpty()) {
             Toast.makeText(Buy.this,
-                    "enter price", Toast.LENGTH_LONG).show();
+                    getString(R.string.price), Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -478,12 +478,22 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
     public void addedToTicket(AddTicketResponse addTicketResponse) {
 
         if (addTicketResponse.success.equalsIgnoreCase("success")) {
+
+
+            SharedPrefDueDate pref = new SharedPrefDueDate(this);
+
+            pref.setUserPointsFromPk(""+(pref.getUserPointsFromPk() + Integer.parseInt(mDealDetailsResponse.getData().getDealDetails().getTenderCoupon())));
+
+            pref.setUserCouponsFromPk(""+(pref.getUserCouponsFromPk() - Integer.parseInt(mDealDetailsResponse.getData().getDealDetails().getPoints())));
+
+
             Toast.makeText(this, "" + addTicketResponse.message, Toast.LENGTH_SHORT).show();
             buy_button.setText(getString(R.string.update));
 
             clearify_tv.setText(String.format(getString(R.string.clearify_update_string),
                     mDealDetailsResponse.getData().getDealDetails().getTenderEditCost(),
                     mDealDetailsResponse.getData().getDealDetails().getMy_ticket_points()));
+
 
             clearify_holder.setVisibility(View.VISIBLE);
 

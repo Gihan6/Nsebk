@@ -152,6 +152,8 @@ public class Login extends BaseActivity implements LoginView {
         if (response.getErrors() == null && response.getSuccess().equalsIgnoreCase("success")) {
             response.getData().setVerified(true);
             pref.setUserLogged(new Gson().toJson(response));
+            pref.setUserPointsFromPk(response.getData().getPoints()); // save points
+            pref.setUserCouponsFromPk(response.getData().getCoupons()); // save tickets
 
             Intent i = new Intent(Login.this, MainActivity2.class);
             i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

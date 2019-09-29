@@ -184,4 +184,5 @@
     <string name="pay">Pay</string>
 
     <string name="logout">logout done successfully</string>
+    <string name="price">Enter Price</string>
 </resources>

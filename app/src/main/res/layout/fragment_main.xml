@@ -103,6 +103,8 @@
 
 
                 <LinearLayout
+                    android:layoutDirection="locale"
+                    android:textDirection="locale"
                     android:id="@+id/grid_vg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
