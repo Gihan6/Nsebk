@@ -302,7 +302,6 @@ public class MainActivity2 extends BaseActivity implements MainView,
 
     @Override
     public void afterLogout() {
-        Toast.makeText(this,"logout",Toast.LENGTH_SHORT).show();
         pref.setUserLogged(null);
         pref.clear();
         finish();
@@ -311,6 +310,7 @@ public class MainActivity2 extends BaseActivity implements MainView,
                 Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(i);
 
+        Toast.makeText(getApplicationContext(),getString(R.string.logout),Toast.LENGTH_LONG).show();
     }
 
     @Override

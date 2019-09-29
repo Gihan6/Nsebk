@@ -183,6 +183,7 @@
     <string name="finish_buy">اتمام عمليه الشراء</string>
     <string name="good_luck_next_time">حظ اوفر الصفقات الاخري </string>
     <string name="pay">ادفع</string>
+    <string name="logout">تم تسجيل الخروج بنجاح</string>
 
 
     <string-array name="gavor_array"></string-array>
