@@ -43,7 +43,7 @@
     <string name="female">أنثى</string>
     <string name="birth">العمر</string>
     <string name="confirm1">اتعهد بصحة البيانات المدخلة</string>
-    <string name="agree">أوافق على كل شروط التسجيل</string>
+    <string name="agree"><u>أوافق على كل شروط التسجيل</u></string>
     <string name="done">تم التسجيل بنجاح</string>
     <string name="done1">من فضلك قم بتنشيط العضوية من خلال رابط</string>
     <string name="done2">التفعيل المرسل لبريدالإلكترونى المسجل</string>

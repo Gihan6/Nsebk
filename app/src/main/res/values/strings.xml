@@ -42,7 +42,7 @@
     <string name="message_sent">Your Message Sent Successfully</string>
 
     <string name="confirm1">i confirmed with this information</string>
-    <string name="agree">I agree to the registration requirements</string>
+    <string name="agree"><u>I agree to the registration requirements</u></string>
     <string name="done">successfully registered</string>
     <string name="done1">confirm from the link sended</string>
     <string name="done2">check your email inbox for confirm </string>

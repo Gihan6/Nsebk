@@ -424,12 +424,12 @@
                         android:text="@string/agree"
                         android:textColor="@color/colorPrimary" />
 
-                    <View
-                        android:layout_gravity="end"
-                        android:layout_width="90dp"
-                        android:layout_height="1sp"
-                        android:background="@color/colorPrimary"
-                        />
+                    <!--<View-->
+                        <!--android:layout_gravity="end"-->
+                        <!--android:layout_width="90dp"-->
+                        <!--android:layout_height="1sp"-->
+                        <!--android:background="@color/colorPrimary"-->
+                        <!--/>-->
 
                 </LinearLayout>
 
