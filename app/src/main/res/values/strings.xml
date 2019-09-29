@@ -121,6 +121,9 @@
     <string name="account_info">Account Information</string>
     <string name="forget_pass_desc">Enter Your Registered Email and  we will \n send you a link to reset your password</string>
 
+    <string name="enter_password">please enter the new password</string>
+    <string name="enter_confirm_password">please enter the confirmation  of new password</string>
+
     <string name="apply">Apply</string>
     <string name="code">Code</string>
     <string name="kassaem">Coupons Number</string>

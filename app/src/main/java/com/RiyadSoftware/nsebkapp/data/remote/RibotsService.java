@@ -108,8 +108,8 @@ public interface RibotsService {
     @POST("--------------")
     Observable<VerifyCodeResponse> verify(@Body VerifyCodeRequest request);
 
-    @POST("--------------")
-    Observable<NewPasswordResponse> newPassword(@Body NewPasswordRequest request);
+    @POST("reset_password")
+    Observable<NewPasswordResponse> newPassword(@Body NewPasswordRequest newPasswordRequest );
 
 
     @POST("Interests")

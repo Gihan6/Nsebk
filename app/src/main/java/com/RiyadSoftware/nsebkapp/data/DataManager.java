@@ -108,11 +108,11 @@ public class DataManager {
         return mRibotsService.Login(loginRequest);
     }
 
-    public Observable<VerifyCodeResponse> verifyForgetPasswordt(VerifyCodeRequest request) {
-        return mRibotsService.verify(request);
+    public Observable<VerifyResponse> verifyCodeForgetPassword(Map<String, String> values) {
+        return mRibotsService.verifyUSer(values);
     }
-    public Observable<NewPasswordResponse> newPassword(NewPasswordRequest request) {
-        return mRibotsService.newPassword(request);
+    public Observable<NewPasswordResponse> newPassword(NewPasswordRequest newPasswordRequest) {
+        return mRibotsService.newPassword(newPasswordRequest);
     }
     public Observable<RegisterResponse> register(RegisterRequest registerRequest) {
         return mRibotsService.register(registerRequest);
