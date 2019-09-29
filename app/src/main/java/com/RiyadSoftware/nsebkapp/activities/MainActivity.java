@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.skip)
     void skip() {
-        startActivity(new Intent(this, AfterSkip.class));
+        startActivity(new Intent(this, /*AfterSkip.class*/ Login.class));
     }
 
 }
