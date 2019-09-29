@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.RiyadSoftware.nsebkapp">
 
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:name=".Application"
         android:allowBackup="true"
@@ -16,67 +22,126 @@
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:appComponentFactory">
 
-        <activity android:name=".activities.AfterSkip"></activity>
-        <activity android:name=".activities.NewPassword" />
-        <activity android:name=".activities.VerifyForgetPassword" />
-        <activity android:name=".Ui.Register.VerifyActivity" />
+        <activity android:name=".activities.AfterSkip"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.NewPassword"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.VerifyForgetPassword"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Ui.Register.VerifyActivity"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".activities.WinnerActivity"
-            android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".activities.ContactUs" />
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.ContactUs"
+            android:screenOrientation="portrait"
+            />
         <activity android:name=".activities.AboutUs" />
-        <activity android:name=".Splash">
+        <activity android:name=".Splash"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".activities.Register"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".activities.Login" />
-        <activity android:name=".activities.ResetPassword" />
-        <activity android:name=".activities.MainActivity2" />
-        <activity android:name=".activities.Privacy" />
-        <activity android:name=".activities.Conditions" />
-        <activity android:name=".activities.MyInterests" />
-        <activity android:name=".activities.MainCategory">
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.Login"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.ResetPassword"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.MainActivity2"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.Privacy"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.Conditions"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.MyInterests"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.MainCategory"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"
+                    android:screenOrientation="portrait"
+                    />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.SubCategActivity" />
-        <activity android:name=".activities.MyAccount" />
-        <activity android:name=".activities.MyDeals" />
-        <activity android:name=".activities.AccountInfos" />
-        <activity android:name=".activities.MyAddresses" />
-        <activity android:name=".activities.ShippingDates" />
+        <activity android:name=".activities.SubCategActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.MyAccount"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.MyDeals"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.AccountInfos"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.MyAddresses"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.ShippingDates"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".activities.Buy"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".activities.Winner"
-            android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".activities.Payment" />
-        <activity android:name=".activities.FinishDeal" />
-        <activity android:name=".activities.Shipping_buy" />
-        <activity android:name=".activities.LanguageActivity">
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.Payment"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.FinishDeal"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.Shipping_buy"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.LanguageActivity"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.ProductsSubActivity" />
-        <activity android:name=".activities.SettingActivity" />
+        <activity android:name=".activities.ProductsSubActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activities.SettingActivity"
+            android:screenOrientation="portrait"
+            />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>
