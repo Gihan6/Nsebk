@@ -206,7 +206,9 @@ public class PackageFragment extends BaseFragment implements PackagesSubView, Sh
 
     @Override
     public void buyPackage(int id) {
-        mPackagesPresenter.Charge(new ChargeRequest(sharedPrefDueDate.getUserLogged().getRemember_token(),
-                id));
+//        "token": "MP5cKbh7wYoDOIwX0zM71J8dSLOzF54ch5MDi0YLM22Fcl3BFZaq3X1tVk4d",
+//                "package_id": 6
+        mPackagesPresenter.Charge(new ChargeRequest("MP5cKbh7wYoDOIwX0zM71J8dSLOzF54ch5MDi0YLM22Fcl3BFZaq3X1tVk4d",
+                6));
     }
 }

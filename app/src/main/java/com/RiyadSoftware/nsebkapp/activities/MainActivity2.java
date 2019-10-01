@@ -16,7 +16,6 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.RiyadSoftware.nsebkapp.R;
 import com.RiyadSoftware.nsebkapp.Ui.Main.MainPresenter;
@@ -102,7 +101,7 @@ public class MainActivity2 extends BaseActivity implements MainView,
         if (pref.getUserLogged().getUser_name() != null)
             txtProfileName.setText(getString(R.string.welcome) + "  " + pref.getUserLogged().getUser_name());
 
-        int cc= pref.getUserPointsFromPk()+Integer.parseInt(pref.getUserLogged().getPoints() );
+        int cc = pref.getUserPointsFromPk() + Integer.parseInt(pref.getUserLogged().getPoints());
         if (pref.getUserLogged().getPoints() != null)
             txtPointsNum.setText("" + cc);
 
@@ -283,8 +282,8 @@ public class MainActivity2 extends BaseActivity implements MainView,
         super.onResume();
 
 
-            txtPointsNum.setText("" +pref.getUserPointsFromPk());
-         txtTicketsNum.setText("" +pref.getUserCouponsFromPk());
+        txtPointsNum.setText("" + pref.getUserPointsFromPk());
+        //txtTicketsNum.setText("" + pref.getUserCouponsFromPk());
 
     }
 
@@ -308,14 +307,14 @@ public class MainActivity2 extends BaseActivity implements MainView,
                 Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(i);
 
-        Toast.makeText(getApplicationContext(),getString(R.string.logout),Toast.LENGTH_LONG).show();
+        // Toast.makeText(getApplicationContext(),getString(R.string.logout),Toast.LENGTH_LONG).show();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
 
-        int cc= pref.getUserPointsFromPk()+Integer.parseInt(pref.getUserLogged().getPoints() );
+        int cc = pref.getUserPointsFromPk() + Integer.parseInt(pref.getUserLogged().getPoints());
         if (pref.getUserLogged().getPoints() != null)
             txtPointsNum.setText("" + cc);
 

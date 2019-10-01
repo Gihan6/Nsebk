@@ -83,7 +83,7 @@ public interface RibotsService {
     @POST("Awards")
     Observable<RewardsResponse> getRewards(@Body HomeRequest homeRequest);
 
-    @POST("useAward")
+    @POST("DealDetails")
     Observable<ReplaceAwardResponse> getReplaceAwards(@Body ReplaceAwardRequest replaceAwardRequest);
 
     @POST("forget_password")
@@ -162,14 +162,11 @@ public interface RibotsService {
     @POST("logout")
     Observable<VerifyResponse> logout(@Body HomeRequest homeRequest);
 
-
     @POST("Packages")
     Observable<PackageResponse> getPackages(@Body HomeRequest Token);
 
-
     @POST("Charge")
     Observable<ChargeResponse> Charge(@Body ChargeRequest chargeRequest);
-
 
     @POST("Categorys")
     Observable<CategoriesResponce> getCategories(@Body HomeRequest Token);

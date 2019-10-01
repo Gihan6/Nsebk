@@ -1,6 +1,7 @@
 package com.RiyadSoftware.nsebkapp.activities;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
@@ -15,16 +16,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.RiyadSoftware.nsebkapp.R;
-import com.RiyadSoftware.nsebkapp.Ui.finishDeal.FinishDealPrsenter;
-import com.RiyadSoftware.nsebkapp.Ui.finishDeal.FinishDealView;
+import com.RiyadSoftware.nsebkapp.Ui.AddTicket.AddTicketMvpView;
+import com.RiyadSoftware.nsebkapp.Ui.AddTicket.AddTicketPresenter;
 import com.RiyadSoftware.nsebkapp.adapters.DealDetailsImagesAdapter;
 import com.RiyadSoftware.nsebkapp.adapters.WinnersAdadper;
 import com.RiyadSoftware.nsebkapp.base.BaseActivity;
-import com.RiyadSoftware.nsebkapp.data.models.Finishdeal.FinishDealRequest;
-import com.RiyadSoftware.nsebkapp.data.models.Finishdeal.FinishDealResponse;
+import com.RiyadSoftware.nsebkapp.data.models.AddTicketResponse;
+import com.RiyadSoftware.nsebkapp.data.models.DealDetailsRequest;
+import com.RiyadSoftware.nsebkapp.data.models.DealDetailsResponse;
 import com.RiyadSoftware.nsebkapp.models.WinerModel;
 import com.RiyadSoftware.nsebkapp.util.SharedPrefDueDate;
 import com.RiyadSoftware.nsebkapp.view.CircleIndicator2;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +40,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class FinishDeal extends BaseActivity implements FinishDealView {
+public class FinishDeal extends BaseActivity implements AddTicketMvpView {
 
     @BindView(R.id.priceTV)
     TextView priceTV;
@@ -71,12 +74,13 @@ public class FinishDeal extends BaseActivity implements FinishDealView {
     Runnable runnable;
     Timer timer = new Timer();
     @Inject
-    FinishDealPrsenter prsenter;
+    AddTicketPresenter prsenter;
 
     int deal_id;
     String pointNumbers = null;
     private int currentPage = 0;
     List<WinerModel> winners;
+    DealDetailsResponse mDealDetailsResponse;
 
 
     @Override
@@ -94,8 +98,11 @@ public class FinishDeal extends BaseActivity implements FinishDealView {
             Toast.makeText(this, getString(R.string.error_in_data), Toast.LENGTH_SHORT).show();
             return;
         }
+
+
         prsenter.attachView(this);
-        prsenter.getFinishDealData(new FinishDealRequest(new SharedPrefDueDate(this).getUserLogged().getRemember_token(),
+        prsenter.getDealDetails(new DealDetailsRequest(
+                new SharedPrefDueDate(this).getUserLogged().getRemember_token(),
                 deal_id));
 
 
@@ -125,18 +132,6 @@ public class FinishDeal extends BaseActivity implements FinishDealView {
 
     }
 
-
-    @Override
-    public void getFinishDealData(FinishDealResponse response) {
-
-        //Handel all view here
-
-        //if i am winner show button of
-        btn_buy.setVisibility(View.VISIBLE);
-
-
-    }
-
     @Override
     public void showEmpty() {
 
@@ -148,12 +143,99 @@ public class FinishDeal extends BaseActivity implements FinishDealView {
 
     }
 
-    //Wait for image
+
+    private void showPaymentDialog() {
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_payment);
+        dialog.setCancelable(true);
+
+        Button btn_cancel = dialog.findViewById(R.id.close);
+        Button btn_pay = dialog.findViewById(R.id.btn_pay);
+        EditText et_creditNum = dialog.findViewById(R.id.et_numOFCredit);
+        EditText et_finishDate = dialog.findViewById(R.id.et_finishDate);
+        EditText et_validateNun = dialog.findViewById(R.id.et_validateNum);
+        EditText et_name = dialog.findViewById(R.id.et_numOFCredit);
+
+        btn_cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "cancel", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
+
+            }
+        });
+
+        btn_pay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Should pay", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
+    }
+
+
+    @Override
+    public void addedToTicket(AddTicketResponse addTicketResponse) {
+
+    }
+
+    @Override
+    public void showDetails(DealDetailsResponse dealDetailsResponse) {
+
+        try {
+            if (dealDetailsResponse.getData() == null || dealDetailsResponse.getData().getDealDetails() == null)
+                return;
+
+            mDealDetailsResponse = dealDetailsResponse;
+
+//        if (dealDetailsResponse.getData().getDealDetails().getwi)
+            RequestOptions options = new RequestOptions();
+            options.fallback(R.drawable.logo);
+            options.placeholder(R.drawable.logo);
+
+
+            handleDealImages();
+
+            SharedPrefDueDate prefDueDate = new SharedPrefDueDate(this);
+            if (prefDueDate.getCurrency().equals("2")) {
+                priceTV.setText(dealDetailsResponse.getData().getDealDetails().getOriginalPrice() + " " + getString(R.string.SAR));
+                minPriceTV.setText(dealDetailsResponse.getData().getDealDetails().getInitialPrice() + " " + getString(R.string.SAR));
+            } else {
+                priceTV.setText(dealDetailsResponse.getData().getDealDetails().getOriginalPrice() + " " + getString(R.string.dollar_currency));
+                minPriceTV.setText(dealDetailsResponse.getData().getDealDetails().getInitialPrice() + " " + getString(R.string.dollar_currency));
+            }
+
+            pointsTV.setText(dealDetailsResponse.getData().getDealDetails().getPoints() == null ? 0 + "  " + getString(R.string.tickets) :
+                    dealDetailsResponse.getData().getDealDetails().getPoints() + "  " + getString(R.string.tickets));
+
+
+            if (dealDetailsResponse.getData().getDealDetails().getWinner_id() != null) {
+//            if (new SharedPrefDueDate(this).getUserLogged().getId() ==
+//                    Integer.valueOf(dealDetailsResponse.getData().getDealDetails().getWinner_id())){
+//
+//            }
+                Intent intent = new Intent(this, Winner.class);
+                intent.putExtra("name", dealDetailsResponse.getData().getDealDetails().getWinner_name());
+                intent.putStringArrayListExtra("winners", (ArrayList<String>) dealDetailsResponse.getData().getDealDetails().getFive_second_users());
+                startActivity(intent);
+                finish();
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
     private void handleDealImages() {
         final List<String> list = new ArrayList<>();
-//        for (int i = 0; i < mDealDetailsResponse.getData().getDealDetails().getImages().size(); i++) {
-//            list.add(mDealDetailsResponse.getData().getDealDetails().getImages().get(i).toString());
-//        }
+        for (int i = 0; i < mDealDetailsResponse.getData().getDealDetails().getImages().size(); i++) {
+            list.add(mDealDetailsResponse.getData().getDealDetails().getImages().get(i).toString());
+        }
         DealDetailsImagesAdapter dealDetailsImagesAdapter = new DealDetailsImagesAdapter(list, this);
 
         RecyclerView.LayoutManager
@@ -189,36 +271,5 @@ public class FinishDeal extends BaseActivity implements FinishDealView {
         dealDetailsImagesAdapter.registerAdapterDataObserver(indicator.getAdapterDataObserver());
     }
 
-    private void showPaymentDialog() {
-        final Dialog dialog = new Dialog(this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.dialog_payment);
-        dialog.setCancelable(true);
-
-        Button btn_cancel = dialog.findViewById(R.id.close);
-        Button btn_pay = dialog.findViewById(R.id.btn_pay);
-        EditText et_creditNum = dialog.findViewById(R.id.et_numOFCredit);
-        EditText et_finishDate = dialog.findViewById(R.id.et_finishDate);
-        EditText et_validateNun = dialog.findViewById(R.id.et_validateNum);
-        EditText et_name = dialog.findViewById(R.id.et_numOFCredit);
-
-        btn_cancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "cancel", Toast.LENGTH_SHORT).show();
-                dialog.dismiss();
-
-            }
-        });
-
-        btn_pay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Should pay", Toast.LENGTH_SHORT).show();
-                dialog.dismiss();
-            }
-        });
-        dialog.show();
-    }
 
 }

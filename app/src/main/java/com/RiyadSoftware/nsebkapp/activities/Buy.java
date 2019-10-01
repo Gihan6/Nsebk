@@ -445,7 +445,7 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
     void buy_button() {
         if (priceET.getText().toString().trim().isEmpty()) {
             Toast.makeText(Buy.this,
-                    getString(R.string.price), Toast.LENGTH_LONG).show();
+                    getString(R.string.price__), Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -564,9 +564,6 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
                 */
 
             handleDealImages();
-
-            Log.e("Time", "" + dealDetailsResponse.getData().getDealDetails().getExpiryDate().split(" ")[1]);
-            Log.e("Date", "" + dealDetailsResponse.getData().getDealDetails().getExpiryDate().split(" ")[0]);
 
             if (dealDetailsResponse.getData().getDealDetails().getMy_ticket_points() != null) {
                 isPartInDealBefore = true;
