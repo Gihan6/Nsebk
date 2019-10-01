@@ -7,6 +7,8 @@ import com.RiyadSoftware.nsebkapp.data.DataManager;
 import com.RiyadSoftware.nsebkapp.data.models.forgetPassword.NewPasswordRequest;
 import com.RiyadSoftware.nsebkapp.data.models.forgetPassword.NewPasswordResponse;
 
+import java.util.Map;
+
 import javax.inject.Inject;
 
 import io.reactivex.Observer;
@@ -35,9 +37,9 @@ public class NewPasswordPrsenter extends BasePresenter<NewPasswordView> {
     }
 
 
-    public void Forget(NewPasswordRequest request) {
+    public void sendNewPassword(NewPasswordRequest newPasswordRequest) {
         getMvpView().showLoader();
-        mDataManager.newPassword(request)
+        mDataManager.newPassword(newPasswordRequest)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
                 .subscribe(new Observer<NewPasswordResponse>() {
@@ -54,7 +56,7 @@ public class NewPasswordPrsenter extends BasePresenter<NewPasswordView> {
 
                     @Override
                     public void onError(@NonNull Throwable e) {
-                        getMvpView().showErrorInRequest();
+                        getMvpView().showErrorInRequest(e.getMessage());
                         getMvpView().hideLoader();
                     }
 

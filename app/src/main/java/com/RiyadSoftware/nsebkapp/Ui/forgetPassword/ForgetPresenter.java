@@ -6,8 +6,11 @@ import com.RiyadSoftware.nsebkapp.base.BasePresenter;
 import com.RiyadSoftware.nsebkapp.data.DataManager;
 import com.RiyadSoftware.nsebkapp.data.models.LoginRequest;
 import com.RiyadSoftware.nsebkapp.data.models.LoginResponse;
+import com.RiyadSoftware.nsebkapp.data.models.VerifyResponse;
 import com.RiyadSoftware.nsebkapp.data.models.forgetPassword.VerifyCodeRequest;
 import com.RiyadSoftware.nsebkapp.data.models.forgetPassword.VerifyCodeResponse;
+
+import java.util.Map;
 
 import javax.inject.Inject;
 
@@ -37,34 +40,37 @@ public class ForgetPresenter extends BasePresenter<ForgetView> {
     }
 
 
-    public void Forget(VerifyCodeRequest request) {
+
+    public void verifyCodeForgetPassword(Map<String , String> body) {
         getMvpView().showLoader();
-        mDataManager.verifyForgetPasswordt(request)
+        mDataManager.verifyUser(body)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
-                .subscribe(new Observer<VerifyCodeResponse>() {
+                .subscribe(new Observer<VerifyResponse>() {
                     @Override
                     public void onSubscribe(@NonNull Disposable d) {
                         mDisposable = d;
                     }
 
                     @Override
-                    public void onNext(@NonNull VerifyCodeResponse response) {
-                        getMvpView().navigateToNewPassword(response);
+                    public void onNext(@NonNull VerifyResponse countriesResponse) {
+                        getMvpView().navigateToNewPassword(countriesResponse);
                         getMvpView().hideLoader();
                     }
 
                     @Override
                     public void onError(@NonNull Throwable e) {
-                        getMvpView().showErrorInForgetPAssword();
+                        getMvpView().showErrorMessage(e.getMessage());
                         getMvpView().hideLoader();
                     }
 
                     @Override
                     public void onComplete() {
 
+                        getMvpView().hideLoader();
                     }
                 });
     }
+
 
 }

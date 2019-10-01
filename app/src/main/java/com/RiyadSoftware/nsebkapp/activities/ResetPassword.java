@@ -60,9 +60,9 @@ public class ResetPassword extends BaseActivity implements ResetSubView {
         if (offersResponseModel.getSuccess().equalsIgnoreCase("success")) {
 
             startActivity(new Intent(this,VerifyForgetPassword.class));
-            Toast.makeText(this, "" + offersResponseModel.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "" + offersResponseModel.getMessage(), Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, "" + offersResponseModel.getErrors(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "" + offersResponseModel.getErrors(), Toast.LENGTH_LONG).show();
         }
     }
 

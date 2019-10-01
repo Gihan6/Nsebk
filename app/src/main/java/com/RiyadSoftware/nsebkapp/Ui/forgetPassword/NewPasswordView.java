@@ -9,5 +9,5 @@ public interface NewPasswordView
 
     public void navigateToLogin(NewPasswordResponse response);
 
-    public void showErrorInRequest();
+    public void showErrorInRequest(String error);
 }

@@ -72,12 +72,12 @@ public class OffersAdapter extends RecyclerView.Adapter<OffersAdapter.ViewHolder
             else {
                 holder.image.setVisibility(View.GONE);
                 holder.videoView.setVisibility(View.VISIBLE);
-                MediaController mediaController = new MediaController(mContext);
-                mediaController.setAnchorView(holder.videoView);
+               // MediaController mediaController = new MediaController(mContext);
+                //mediaController.setAnchorView(holder.videoView);
                 //Location of Media File
                 Uri uri = Uri.parse(contents.get(position).getVideo());
                 //Starting VideView By Setting MediaController and URI
-                holder.videoView.setMediaController(mediaController);
+                //holder.videoView.setMediaController(mediaController);
                 holder.videoView.setVideoURI(uri);
                 holder.videoView.requestFocus();
                 holder.videoView.start();

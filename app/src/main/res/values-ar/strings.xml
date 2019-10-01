@@ -125,6 +125,8 @@
     <string name="buy">شراء</string>
     <string name="deal_ended">الصفقة انتهت </string>
     <string name="select_valid_date">من فضلك اختر تاريخ صالح </string>
+    <string name="enter_confirm_password">من فضلك أعد تأكيد كلمة المرور الجديدة</string>
+
     <string name="part_done">تم شراء الباقة بنجاح</string>
     <string name="edit_account">تعديل الحساب</string>
     <string name="pass_">كلمه السر غير متاحة</string>
@@ -139,7 +141,7 @@
     <string name="clearify_string"> عند دخولك الصفقة سيتم حسم  %1$s  تذاكر من رصيدك وستحصل علي  %2$s ‫نقطة‬ مكافآت </string>
     <string name="clearify_string_sucess">Congrats you entered the deal ticket price is %1$s! You will be given %2$s free Vouchers.</string>
     <string name="home_Address">عنوان المنزل</string>
-
+<string name="enter_password">من فضلك قم بكتابة كلمة المرور الجديدة</string>
     <string name="address">العنوان</string>
     <string name="street_name">رقم الشارع</string>
     <string name="home_number">رقم المنزل</string>
