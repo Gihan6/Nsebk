@@ -195,6 +195,7 @@
                             android:background="@drawable/edit_text_bottom_line"
                             android:inputType="phone"
                             android:paddingTop="5dp"
+                            android:maxLength="9"
                             android:paddingBottom="5dp" />
                         <TextView
                             android:id="@+id/tv_code"

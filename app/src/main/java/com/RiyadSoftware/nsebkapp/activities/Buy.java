@@ -192,6 +192,7 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
     @OnClick(R.id.continue_tv)
     public void clearify() {
         clearify_holder.setVisibility(View.GONE);
+        buy_button.setVisibility(View.VISIBLE);
         buy_button.setEnabled(true);
         buy_button.setClickable(true);
         buy_button.setText(getString(R.string.ok));

@@ -8,6 +8,10 @@
 
     android:background="@color/white">
 
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefreshEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -53,15 +57,7 @@
 
         </RelativeLayout>
 
-        <ImageView
-            android:visibility="gone"
-            android:id="@+id/refresh"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/ic_refresh"
 
-            android:layout_gravity="center"
-            />
 
 
         <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -250,11 +246,14 @@
                                 android:textSize="22sp"
                                 android:visibility="gone" />
 
-                            <android.support.v7.widget.RecyclerView
-                                android:id="@+id/onlineRV"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@color/white" />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/onlineRV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white" />
+
+
 
 
                         </FrameLayout>
@@ -383,7 +382,7 @@
         </ScrollView>
 
     </LinearLayout>
-
+    </android.support.v4.widget.SwipeRefreshLayout>
 
     <ProgressBar
         android:id="@+id/loading"

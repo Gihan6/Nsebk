@@ -198,6 +198,11 @@
         <item>الرياض</item>
         <item>الرياض</item>
     </string-array>
+    <string name="noOneWine">لايوجد فائز بالصفقة</string>
+
+    <string name="areYouWantToExit"> هل تريد الخروج من البرنامج ؟ </string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
 
 
 </resources>

@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.RiyadSoftware.nsebkapp.R;
+import com.RiyadSoftware.nsebkapp.data.models.Finishdeal.FinishDealResponse;
 import com.RiyadSoftware.nsebkapp.models.WinerModel;
 
 import java.util.List;
@@ -21,9 +22,9 @@ public class WinnersAdadper extends RecyclerView.Adapter<WinnersAdadper.ViewHold
 
 
     Context context;
-    List<WinerModel> dataList;
+    List<FinishDealResponse.Winner> dataList;
 
-    public WinnersAdadper(Context context, List<WinerModel> dataList) {
+    public WinnersAdadper(Context context, List<FinishDealResponse.Winner> dataList) {
         this.context = context;
         this.dataList = dataList;
     }
@@ -39,8 +40,8 @@ public class WinnersAdadper extends RecyclerView.Adapter<WinnersAdadper.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder viewHolder, final int i) {
-        viewHolder.winner_name.setText(dataList.get(i).getWinerNAme());
-        viewHolder.price.setText(dataList.get(i).getPrice());
+        viewHolder.winner_name.setText(dataList.get(i).getName());
+        viewHolder.price.setText(dataList.get(i).getPoints());
     }
 
     @Override

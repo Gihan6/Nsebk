@@ -1,5 +1,6 @@
 package com.RiyadSoftware.nsebkapp.activities;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.support.v4.content.res.ResourcesCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -258,19 +260,19 @@ public class MainActivity2 extends BaseActivity implements MainView,
     }
 
 
-    @Override
-    public void onBackPressed() {
-        if (getSupportFragmentManager().findFragmentById(R.id.main_activity_container) instanceof MainFragment) {
-            finishAffinity();
-        } else {
-
-//            getSupportFragmentManager().beginTransaction().
-//                    replace(R.id.main_activity_container,
-//                            new MainFragment()).commit();
-            bottomNavigation.setCurrentItem(0);
-
-        }
-    }
+//    @Override
+//    public void onBackPressed() {
+//        if (getSupportFragmentManager().findFragmentById(R.id.main_activity_container) instanceof MainFragment) {
+//            finishAffinity();
+//        } else {
+//
+////            getSupportFragmentManager().beginTransaction().
+////                    replace(R.id.main_activity_container,
+////                            new MainFragment()).commit();
+//            bottomNavigation.setCurrentItem(0);
+//
+//        }
+//    }
 
     @Override
     public void showEmpty() {
@@ -320,6 +322,25 @@ public class MainActivity2 extends BaseActivity implements MainView,
 
         if (pref.getUserLogged().getCoupons() != null)
             txtTicketsNum.setText("" + pref.getUserLogged().getCoupons());
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(getString(R.string.areYouWantToExit))
+                .setCancelable(false)
+                .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                    }
+                })
+                .setNegativeButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 }
 

@@ -69,7 +69,7 @@
                 android:gravity="center"
                 android:text="00:00:00"
                 android:textColor="@color/white"
-                android:textSize="10sp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/dateTV"
@@ -79,7 +79,7 @@
                 android:gravity="center"
                 android:text="@string/finish_deal"
                 android:textColor="@color/white"
-                android:textSize="10sp" />
+                android:textSize="15sp" />
 
         </LinearLayout>
 
@@ -187,13 +187,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/deal_winer"
-        android:textColor="@color/colorPrimary"
-        android:textSize="16sp"
-        android:layout_margin="2sp"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="2sp"
+                 android:text="@string/deal_winer"
+                 android:textColor="@color/colorPrimary"
+                 android:textSize="16sp" />
     <TextView
         android:id="@+id/tv_winnerName"
         android:layout_margin="2sp"
@@ -237,7 +237,18 @@
             android:textSize="16sp"
             android:padding="4dp"
             />
-
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_noOneWine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/noOneWine"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:padding="4dp"
+            />
     </LinearLayout>
 
 </ScrollView>

@@ -202,7 +202,7 @@ public interface RibotsService {
     Observable<CurrencyResponse> getCurrencies(@Body CurrencyRequest currencyRequest);
 
 
-    @POST("finishDeal")
+    @POST("DealDetails")
     Observable<FinishDealResponse> getFinishDeal(@Body FinishDealRequest request);
 
 

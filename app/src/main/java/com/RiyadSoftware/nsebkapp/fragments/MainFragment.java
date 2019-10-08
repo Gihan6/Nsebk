@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.LocalBroadcastManager;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.PagerSnapHelper;
@@ -107,8 +108,8 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
 
     @BindView(R.id.linear_deals)
     LinearLayout linearDeals;
-    @BindView(R.id.refresh)
-    ImageView iv_refresh;
+    @BindView(R.id.swipeToRefreshEnd)
+    SwipeRefreshLayout refreshOnline;
 
 
     HomeModel mHomeModel;
@@ -188,27 +189,24 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
 
         mHomePresenter.getHomeData(new HomeRequest(pref.getUserLogged().getRemember_token()));
 
+//-------------------------------------------------------------
 
-        //************************
+        refreshOnline.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                home_recyclerview.setAdapter(mProductAdapter);
+                home_recyclerview.setNestedScrollingEnabled(false);
+                mHomePresenter.getHomeData(new HomeRequest(pref.getUserLogged().getRemember_token()));
+                refreshOnline.setRefreshing(false);
 
-        parent.getViewTreeObserver().
-                addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
-                                                                                @Override
-                                                                                public void onScrollChanged() { if (!parent.canScrollVertically(1)) {
-                                                                                        // bottom of scroll view
-                                                                                        iv_refresh.setVisibility(View.VISIBLE);
-                                                                                    }
-                                                                                    if (!parent.canScrollVertically(-1)) {
-                                                                                        // top of scroll view
-                                                                                        iv_refresh.setVisibility(View.GONE);
-
-
-                                                                                    }
-                                                                                }
-                                                                            });
-
-
+            }
+        });
     }
+
+
+
+
+
 
     private void getDataForGrid() {
         displayCurrentDeals();
@@ -571,10 +569,5 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
         mHomePresenter.addToFav(new AddFavRequest(pref.getUserLogged().getRemember_token(), dealID));
     }
 
-    @OnClick(R.id.refresh)
-    void refresh() {
-        mHomePresenter.getHomeData(new HomeRequest(pref.getUserLogged().getRemember_token()));
-        parent.scrollTo(0,0);
 
-    }
 }

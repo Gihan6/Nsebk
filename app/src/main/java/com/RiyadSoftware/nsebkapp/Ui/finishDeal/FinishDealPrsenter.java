@@ -7,6 +7,8 @@ import com.RiyadSoftware.nsebkapp.Ui.Home.HomeView;
 import com.RiyadSoftware.nsebkapp.activities.FinishDeal;
 import com.RiyadSoftware.nsebkapp.base.BasePresenter;
 import com.RiyadSoftware.nsebkapp.data.DataManager;
+import com.RiyadSoftware.nsebkapp.data.models.DealDetailsRequest;
+import com.RiyadSoftware.nsebkapp.data.models.DealDetailsResponse;
 import com.RiyadSoftware.nsebkapp.data.models.Finishdeal.FinishDealRequest;
 import com.RiyadSoftware.nsebkapp.data.models.Finishdeal.FinishDealResponse;
 import com.RiyadSoftware.nsebkapp.data.models.HomeModel;
@@ -40,20 +42,21 @@ public class FinishDealPrsenter extends BasePresenter<FinishDealView> {
         mDataManager = dataManager;
     }
 
-    public void replaceAward(String token , int awardId) {
+    public void getDealDetails(FinishDealRequest dealDetailsRequest) {
         getMvpView().showLoader();
-        mDataManager.getReplaceAwards(new ReplaceAwardRequest(token , awardId))
+        mDataManager.getFinishDealData(dealDetailsRequest)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
-                .subscribe(new Observer<ReplaceAwardResponse>() {
+                .subscribe(new Observer<FinishDealResponse>() {
                     @Override
                     public void onSubscribe(@NonNull Disposable d) {
                         mDisposable = d;
                     }
 
                     @Override
-                    public void onNext(@NonNull ReplaceAwardResponse replaceAwardResponse) {
-                        getMvpView().getFinishDealData(replaceAwardResponse);
+                    public void onNext(@NonNull FinishDealResponse homeModel) {
+
+                        getMvpView().getFinishDealData(homeModel);
                         getMvpView().hideLoader();
 
                     }
@@ -62,11 +65,12 @@ public class FinishDealPrsenter extends BasePresenter<FinishDealView> {
                     public void onError(@NonNull Throwable e) {
                         getMvpView().showError();
                         getMvpView().hideLoader();
+                        e.printStackTrace();
                     }
 
                     @Override
                     public void onComplete() {
-                        getMvpView().hideLoader();
+
                     }
                 });
     }

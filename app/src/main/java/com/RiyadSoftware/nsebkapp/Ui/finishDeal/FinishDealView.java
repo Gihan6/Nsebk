@@ -8,6 +8,6 @@ import com.RiyadSoftware.nsebkapp.data.models.awards.ReplaceAwardResponse;
 
 public interface FinishDealView extends MvpView {
 
-    void getFinishDealData(ReplaceAwardResponse response);
+    void getFinishDealData(FinishDealResponse response);
 
 }

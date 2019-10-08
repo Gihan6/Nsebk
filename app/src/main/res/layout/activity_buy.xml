@@ -76,7 +76,7 @@
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/white"
-                    android:textSize="10sp" />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/dateTV"
@@ -86,7 +86,7 @@
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/white"
-                    android:textSize="10sp" />
+                    android:textSize="15sp" />
 
             </LinearLayout>
 
@@ -346,6 +346,7 @@
             </RelativeLayout>
             <TextView
 
+                android:visibility="gone"
                 android:id="@+id/text_price_after_decrease"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -371,6 +372,7 @@
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
                 android:text="@string/done_"
+                android:visibility="gone"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
 

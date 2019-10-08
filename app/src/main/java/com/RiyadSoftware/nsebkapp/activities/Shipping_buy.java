@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,6 +42,11 @@ public class Shipping_buy extends BaseActivity implements PackagesSubView {
     @BindView(R.id.buy_vg)
     ViewGroup buy_vg;
 
+    @BindView(R.id.sarRB)
+    RadioButton rb_ryal;
+    @BindView(R.id.dollarRB)
+    RadioButton rb_dollar;
+
     //---------
 
     @BindView(R.id.btn_tatbiq)
@@ -60,9 +66,10 @@ public class Shipping_buy extends BaseActivity implements PackagesSubView {
 
 
     EditText editCoupon;
-
     Button applyCouponBtn;
 
+    int dollarValue;
+    int ryalValue;
 
     @Inject
     PackagesPresenter mPackagesPresenter;
@@ -89,6 +96,9 @@ public class Shipping_buy extends BaseActivity implements PackagesSubView {
         package_name.setText("" + model.getTitle());
         points_label.setText("" + model.getPoints());
         kassaem_label.setText("" + model.getCoupons());
+        et_sumOfBill.setText(""+model.getCost());
+        rb_ryal.setChecked(true);
+        ryalValue=Integer.parseInt(model.getCost());
 
         package_id = model.getId();
 
@@ -110,6 +120,24 @@ public class Shipping_buy extends BaseActivity implements PackagesSubView {
                 mPackagesPresenter.Charge(new ChargeRequest(new
                         SharedPrefDueDate(Shipping_buy.this).getUserLogged().getRemember_token(),
                         model.getId()));
+            }
+        });
+
+        rb_ryal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et_sumOfBill.setText(String.valueOf(ryalValue));
+
+            }
+        });
+        rb_dollar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                dollarValue= (int) (ryalValue*0.266667);
+                et_sumOfBill.setText(String.valueOf(dollarValue));
+
+
             }
         });
 
@@ -147,7 +175,6 @@ public class Shipping_buy extends BaseActivity implements PackagesSubView {
 
     @Override
     public void getCouponResult(CouponResponse couponResponse) {
-        Toast.makeText(this, "" + couponResponse.getMessage(), Toast.LENGTH_SHORT).show();
         if (couponResponse.getErrors() == null) {
             if (couponResponse.getData().getAdd_points() != null) {
                 int pointsAfterCoupon = (Integer.parseInt(points_label.getText().toString()) + Integer.parseInt(couponResponse.getData().getAdd_points().toString()));
@@ -158,6 +185,8 @@ public class Shipping_buy extends BaseActivity implements PackagesSubView {
                 int ticketsAfterCoupon = (Integer.parseInt(kassaem_label.getText().toString()) + Integer.parseInt(couponResponse.getData().getAdd_tickets().toString()));
                 kassaem_label.setText("" + ticketsAfterCoupon);
             }
+
+//            if (couponResponse.getData().getn)
 
 
         }

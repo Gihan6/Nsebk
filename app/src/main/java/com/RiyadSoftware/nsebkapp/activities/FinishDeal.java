@@ -1,7 +1,6 @@
 package com.RiyadSoftware.nsebkapp.activities;
 
 import android.app.Dialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
@@ -16,15 +15,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.RiyadSoftware.nsebkapp.R;
-import com.RiyadSoftware.nsebkapp.Ui.AddTicket.AddTicketMvpView;
-import com.RiyadSoftware.nsebkapp.Ui.AddTicket.AddTicketPresenter;
+import com.RiyadSoftware.nsebkapp.Ui.finishDeal.FinishDealPrsenter;
+import com.RiyadSoftware.nsebkapp.Ui.finishDeal.FinishDealView;
 import com.RiyadSoftware.nsebkapp.adapters.DealDetailsImagesAdapter;
 import com.RiyadSoftware.nsebkapp.adapters.WinnersAdadper;
 import com.RiyadSoftware.nsebkapp.base.BaseActivity;
-import com.RiyadSoftware.nsebkapp.data.models.AddTicketResponse;
-import com.RiyadSoftware.nsebkapp.data.models.DealDetailsRequest;
-import com.RiyadSoftware.nsebkapp.data.models.DealDetailsResponse;
-import com.RiyadSoftware.nsebkapp.models.WinerModel;
+import com.RiyadSoftware.nsebkapp.data.models.Finishdeal.FinishDealRequest;
+import com.RiyadSoftware.nsebkapp.data.models.Finishdeal.FinishDealResponse;
 import com.RiyadSoftware.nsebkapp.util.SharedPrefDueDate;
 import com.RiyadSoftware.nsebkapp.view.CircleIndicator2;
 import com.bumptech.glide.request.RequestOptions;
@@ -40,7 +37,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class FinishDeal extends BaseActivity implements AddTicketMvpView {
+public class FinishDeal extends BaseActivity implements FinishDealView {
 
     @BindView(R.id.priceTV)
     TextView priceTV;
@@ -61,6 +58,7 @@ public class FinishDeal extends BaseActivity implements AddTicketMvpView {
     RecyclerView imagesRV;
     @BindView(R.id.rv_winnerNames)
     RecyclerView rv_winner;
+
     @BindView(R.id.indicator_buy)
     CircleIndicator2 indicator;
 
@@ -74,13 +72,14 @@ public class FinishDeal extends BaseActivity implements AddTicketMvpView {
     Runnable runnable;
     Timer timer = new Timer();
     @Inject
-    AddTicketPresenter prsenter;
+    FinishDealPrsenter prsenter;
 
     int deal_id;
     String pointNumbers = null;
     private int currentPage = 0;
-    List<WinerModel> winners;
-    DealDetailsResponse mDealDetailsResponse;
+    List<FinishDealResponse.Winner> winners;
+    FinishDealResponse mDealDetailsResponse;
+    Boolean isWinner = false;
 
 
     @Override
@@ -101,26 +100,14 @@ public class FinishDeal extends BaseActivity implements AddTicketMvpView {
 
 
         prsenter.attachView(this);
-        prsenter.getDealDetails(new DealDetailsRequest(
-                new SharedPrefDueDate(this).getUserLogged().getRemember_token(),
+        prsenter.getDealDetails(new FinishDealRequest(new SharedPrefDueDate(this).getUserLogged().getRemember_token(),
                 deal_id));
-
-
         pointsTV.setText(pointNumbers);
     }
 
     void initAdapter() {
         layoutManager = new LinearLayoutManager(this);
         rv_winner.setLayoutManager(layoutManager);
-        adadper = new WinnersAdadper(this, winners);
-
-        winners = new ArrayList<>();
-        winners.add(new WinerModel("Gihan", "1236"));
-        winners.add(new WinerModel("Gihan", "1236"));
-        winners.add(new WinerModel("Gihan", "1236"));
-        winners.add(new WinerModel("Gihan", "1236"));
-        winners.add(new WinerModel("Gihan", "1236"));
-        rv_winner.setAdapter(adadper);
 
     }
 
@@ -142,7 +129,6 @@ public class FinishDeal extends BaseActivity implements AddTicketMvpView {
         btn_buy.setVisibility(View.VISIBLE);
 
     }
-
 
     private void showPaymentDialog() {
         final Dialog dialog = new Dialog(this);
@@ -174,60 +160,6 @@ public class FinishDeal extends BaseActivity implements AddTicketMvpView {
             }
         });
         dialog.show();
-    }
-
-
-    @Override
-    public void addedToTicket(AddTicketResponse addTicketResponse) {
-
-    }
-
-    @Override
-    public void showDetails(DealDetailsResponse dealDetailsResponse) {
-
-        try {
-            if (dealDetailsResponse.getData() == null || dealDetailsResponse.getData().getDealDetails() == null)
-                return;
-
-            mDealDetailsResponse = dealDetailsResponse;
-
-//        if (dealDetailsResponse.getData().getDealDetails().getwi)
-            RequestOptions options = new RequestOptions();
-            options.fallback(R.drawable.logo);
-            options.placeholder(R.drawable.logo);
-
-
-            handleDealImages();
-
-            SharedPrefDueDate prefDueDate = new SharedPrefDueDate(this);
-            if (prefDueDate.getCurrency().equals("2")) {
-                priceTV.setText(dealDetailsResponse.getData().getDealDetails().getOriginalPrice() + " " + getString(R.string.SAR));
-                minPriceTV.setText(dealDetailsResponse.getData().getDealDetails().getInitialPrice() + " " + getString(R.string.SAR));
-            } else {
-                priceTV.setText(dealDetailsResponse.getData().getDealDetails().getOriginalPrice() + " " + getString(R.string.dollar_currency));
-                minPriceTV.setText(dealDetailsResponse.getData().getDealDetails().getInitialPrice() + " " + getString(R.string.dollar_currency));
-            }
-
-            pointsTV.setText(dealDetailsResponse.getData().getDealDetails().getPoints() == null ? 0 + "  " + getString(R.string.tickets) :
-                    dealDetailsResponse.getData().getDealDetails().getPoints() + "  " + getString(R.string.tickets));
-
-
-            if (dealDetailsResponse.getData().getDealDetails().getWinner_id() != null) {
-//            if (new SharedPrefDueDate(this).getUserLogged().getId() ==
-//                    Integer.valueOf(dealDetailsResponse.getData().getDealDetails().getWinner_id())){
-//
-//            }
-                Intent intent = new Intent(this, Winner.class);
-                intent.putExtra("name", dealDetailsResponse.getData().getDealDetails().getWinner_name());
-                intent.putStringArrayListExtra("winners", (ArrayList<String>) dealDetailsResponse.getData().getDealDetails().getFive_second_users());
-                startActivity(intent);
-                finish();
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
     }
 
 
@@ -272,4 +204,72 @@ public class FinishDeal extends BaseActivity implements AddTicketMvpView {
     }
 
 
+    @Override
+    public void getFinishDealData(FinishDealResponse dealDetailsResponse) {
+
+        try {
+            if (dealDetailsResponse.getData() == null || dealDetailsResponse.getData().getDealDetails() == null)
+                return;
+
+            mDealDetailsResponse = dealDetailsResponse;
+
+//        if (dealDetailsResponse.getData().getDealDetails().getwi)
+            RequestOptions options = new RequestOptions();
+            options.fallback(R.drawable.logo);
+            options.placeholder(R.drawable.logo);
+
+
+            handleDealImages();
+
+            SharedPrefDueDate prefDueDate = new SharedPrefDueDate(this);
+            if (prefDueDate.getCurrency().equals("2")) {
+                priceTV.setText(dealDetailsResponse.getData().getDealDetails().getOriginalPrice() + " " + getString(R.string.SAR));
+                minPriceTV.setText(dealDetailsResponse.getData().getDealDetails().getInitialPrice() + " " + getString(R.string.SAR));
+            } else {
+                priceTV.setText(dealDetailsResponse.getData().getDealDetails().getOriginalPrice() + " " + getString(R.string.dollar_currency));
+                minPriceTV.setText(dealDetailsResponse.getData().getDealDetails().getInitialPrice() + " " + getString(R.string.dollar_currency));
+            }
+
+            pointsTV.setText(dealDetailsResponse.getData().getDealDetails().getPoints() == null ? 0 + "  " + getString(R.string.tickets) :
+                    dealDetailsResponse.getData().getDealDetails().getPoints() + "  " + getString(R.string.tickets));
+
+
+            if (dealDetailsResponse.getData().getWinners() != null &&
+                    dealDetailsResponse.getData().getWinners().size() > 0) {
+
+                winners = dealDetailsResponse.getData().getWinners();
+                adadper = new WinnersAdadper(this, winners);
+                rv_winner.setAdapter(adadper);
+
+
+                for (FinishDealResponse.Winner obj : winners) {
+                    if (obj.getId().equals(new SharedPrefDueDate(this).getUserLogged().getId())) {
+                        isWinner = true;
+                        break;
+                    }
+                }
+                if (isWinner) {
+                    btn_buy.setVisibility(View.VISIBLE);
+                    tv_goodLuck.setVisibility(View.GONE);
+                } else {
+                    tv_goodLuck.setVisibility(View.VISIBLE);
+                    btn_buy.setVisibility(View.GONE);
+
+
+                }
+
+
+            } else {
+                tv_goodLuck.setVisibility(View.GONE);
+                tv_winnerName.setText(getString(R.string.noOneWine));
+                btn_buy.setVisibility(View.GONE);
+            }
+
+            //show goodLuck or payment method
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

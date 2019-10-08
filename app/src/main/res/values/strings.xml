@@ -188,4 +188,8 @@
 
     <string name="logout">logout done successfully</string>
     <string name="price">Enter Price</string>
+    <string name="noOneWine">No one wine</string>
+    <string name="areYouWantToExit">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>
