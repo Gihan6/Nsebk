@@ -67,9 +67,7 @@ public class MainActivity2 extends BaseActivity implements MainView,
     @Inject
     MainPresenter mainPresenter;
     //init the views
-    private Toolbar toolbar;
-    private ActionBarDrawerToggle drawerToggle;
-    private int mSelectedId;
+
     private ImageView menuIV;
 
     @Override

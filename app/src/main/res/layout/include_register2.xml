@@ -196,6 +196,7 @@
                             android:inputType="phone"
                             android:paddingTop="5dp"
                             android:maxLength="9"
+                            android:hint="xxx xxx xxx "
                             android:paddingBottom="5dp" />
                         <TextView
                             android:id="@+id/tv_code"

@@ -153,8 +153,6 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
         mHomePresenter.attachView(this);
         pref = new SharedPrefDueDate(getContext());
 
-        // mHomePresenter.getCurrenciesList(pref.getUserLogged().getRemember_token());
-
         if (pref.getLanguage().equals("ar")) {
             linearDeals.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
 
@@ -268,7 +266,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
                     home_recyclerview.setAdapter(mProductAdapter);
                 }
             } else {
-                myProductRV.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
+                myProductRV.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false));
                 myProductRV.setAdapter(mProductAdapter);
                 if (mHomeModel.getData().getMy_Deals().isEmpty()) {
                     mydealsempty.setVisibility(View.VISIBLE);
@@ -298,7 +296,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
                     home_recyclerview.setAdapter(mProductAdapter);
                 }
             } else {
-                endedRV.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
+                endedRV.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false));
                 endedRV.setAdapter(mProductAdapter);
                 if (mHomeModel.getData().getPervious_Deals().isEmpty()) {
                     endedempty.setVisibility(View.VISIBLE);
@@ -327,7 +325,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
                 }
             } else {
                 futureRV.setLayoutManager(new LinearLayoutManager(context,
-                        LinearLayoutManager.HORIZONTAL, false));
+                        LinearLayoutManager.VERTICAL, false));
                 futureRV.setAdapter(currentDealsAdapter);
                 if (mHomeModel.getData().getComing_Deals().isEmpty()) {
                     futureempty.setVisibility(View.VISIBLE);
@@ -361,7 +359,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
                 }
             } else {
                 onlineRV.setLayoutManager(new LinearLayoutManager(context,
-                        LinearLayoutManager.HORIZONTAL, false));
+                        LinearLayoutManager.VERTICAL, false));
                 onlineRV.setAdapter(currentDealsAdapter);
                 if (mHomeModel.getData().getNow_Deals().isEmpty()) {
                     onlineempty.setVisibility(View.VISIBLE);

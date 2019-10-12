@@ -98,6 +98,8 @@ public class DealsAdapter extends RecyclerView.Adapter<DealsAdapter.ViewHolder> 
         holder.product_price.setText(data.get(postion).getInitial_price() + " " + context.getString(R.string.sar));
 
         holder.points_tv.setText(data.get(postion).getPoints() + " " + context.getString(R.string.tickets));
+        holder.points_lbl.setText((data.get(postion).getPoints()+""));
+
 
 //        holder.points_tv.setText(data.get(postion).getPoints() + " " + context.getString(R.string.points));
         if (isCommingSoon) {
@@ -111,13 +113,13 @@ public class DealsAdapter extends RecyclerView.Adapter<DealsAdapter.ViewHolder> 
         }
         }
         //holder.points_lbl.setText("+" + data.get(postion).getTender_cost() == null ? "0" : data.get(postion).getTender_cost());
-
-        if(data.get(postion).getTender_cost() == null)
-            holder.points_lbl.setText("0");
-        else
-        {
-            holder.points_lbl.setText(data.get(postion).getTender_cost());
-        }
+//
+//        if(data.get(postion).getTender_coupon() == null)
+//            holder.points_lbl.setText("0");
+//        else
+//        {
+//            holder.points_lbl.setText(data.get(postion).getTender_coupon());
+//        }
         if (data.get(postion).isIs_favorite()) {
             holder.likeIV.setImageDrawable(context.getResources().getDrawable(R.drawable.cards_heart));
         } else {
