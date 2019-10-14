@@ -266,7 +266,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
                     home_recyclerview.setAdapter(mProductAdapter);
                 }
             } else {
-                myProductRV.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false));
+                myProductRV.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
                 myProductRV.setAdapter(mProductAdapter);
                 if (mHomeModel.getData().getMy_Deals().isEmpty()) {
                     mydealsempty.setVisibility(View.VISIBLE);
@@ -296,7 +296,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
                     home_recyclerview.setAdapter(mProductAdapter);
                 }
             } else {
-                endedRV.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false));
+                endedRV.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
                 endedRV.setAdapter(mProductAdapter);
                 if (mHomeModel.getData().getPervious_Deals().isEmpty()) {
                     endedempty.setVisibility(View.VISIBLE);
@@ -325,7 +325,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
                 }
             } else {
                 futureRV.setLayoutManager(new LinearLayoutManager(context,
-                        LinearLayoutManager.VERTICAL, false));
+                        LinearLayoutManager.HORIZONTAL, false));
                 futureRV.setAdapter(currentDealsAdapter);
                 if (mHomeModel.getData().getComing_Deals().isEmpty()) {
                     futureempty.setVisibility(View.VISIBLE);
@@ -359,7 +359,7 @@ public class MainFragment extends BaseFragment implements HomeView, DealsAdapter
                 }
             } else {
                 onlineRV.setLayoutManager(new LinearLayoutManager(context,
-                        LinearLayoutManager.VERTICAL, false));
+                        LinearLayoutManager.HORIZONTAL, false));
                 onlineRV.setAdapter(currentDealsAdapter);
                 if (mHomeModel.getData().getNow_Deals().isEmpty()) {
                     onlineempty.setVisibility(View.VISIBLE);
