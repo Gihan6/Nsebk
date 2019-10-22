@@ -34,10 +34,6 @@ public class OffersAdapter extends RecyclerView.Adapter<OffersAdapter.ViewHolder
     }
 
 
-
-
-
-
     @Override
     public int getItemCount() {
         return contents==null?0:contents.size();

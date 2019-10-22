@@ -99,7 +99,9 @@ public class Rewards extends BaseFragment implements RewardsSubView {
             @Override
             public void onItemClick(RewardsResponse.Datum item) {
                 //TODO call new presenter
-                mRewardsPresenter.replaceAward(new SharedPrefDueDate(getActivity()).getUserLogged().getRemember_token() , item.getAward_id());
+                mRewardsPresenter.replaceAward(
+                        new SharedPrefDueDate(getActivity()).getUserLogged().getRemember_token() ,
+                        item.getAward_id());
 
             }
         }));
@@ -107,7 +109,10 @@ public class Rewards extends BaseFragment implements RewardsSubView {
 
     @Override
     public void getReplaceAwardsResponse(ReplaceAwardResponse replaceAwardResponse) {
+
         Toast.makeText(context, ""+replaceAwardResponse.getMessage(), Toast.LENGTH_LONG).show();
+
+
     }
 
     @Override

@@ -40,40 +40,6 @@ public class RewardsPresenter extends BasePresenter<RewardsSubView> {
     }
 
 
-    public void getOffers(final String Token) {
-        getMvpView().showLoader();
-        mDataManager.getOffers()
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribeOn(Schedulers.io())
-                .subscribe(new Observer<OffersResponseModel>() {
-                    @Override
-                    public void onSubscribe(@NonNull Disposable d) {
-                        mDisposable = d;
-                    }
-
-                    @Override
-                    public void onNext(@NonNull OffersResponseModel offersResponseModel) {
-
-                        getMvpView().getOffers(offersResponseModel);
-
-                        getMvpView().hideLoader();
-
-                        getRewards(Token);
-                    }
-
-                    @Override
-                    public void onError(@NonNull Throwable e) {
-                        getMvpView().showError();
-                        getMvpView().hideLoader();
-                        getRewards(Token);
-                    }
-
-                    @Override
-                    public void onComplete() {
-
-                    }
-                });
-    }
 
     public void getRewards(String token) {
         getMvpView().showLoader();
