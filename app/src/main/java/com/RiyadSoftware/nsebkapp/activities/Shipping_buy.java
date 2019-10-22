@@ -162,12 +162,9 @@ public class Shipping_buy extends BaseActivity implements PackagesSubView {
     @Override
     public void afterBuy(ChargeResponse packageResponse) {
         if (packageResponse.getSuccess().equalsIgnoreCase("success")) {
-
             SharedPrefDueDate pref = new SharedPrefDueDate(this);
-
-            pref.setUserPointsFromPk(""+(pref.getUserPointsFromPk() + Integer.parseInt(points_label.getText().toString())));
-
-            pref.setUserCouponsFromPk(""+(pref.getUserCouponsFromPk() + Integer.parseInt(kassaem_label.getText().toString())));
+            pref.setUserPointsFromPk(packageResponse.getPointsCount()+"");
+            pref.setUserCouponsFromPk(packageResponse.getTicketsCount()+"");
 
             showDialog();
         }

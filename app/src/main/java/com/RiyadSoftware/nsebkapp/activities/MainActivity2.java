@@ -101,12 +101,8 @@ public class MainActivity2 extends BaseActivity implements MainView,
         if (pref.getUserLogged().getUser_name() != null)
             txtProfileName.setText(getString(R.string.welcome) + "  " + pref.getUserLogged().getUser_name());
 
-        int cc = pref.getUserPointsFromPk() + Integer.parseInt(pref.getUserLogged().getPoints());
-        if (pref.getUserLogged().getPoints() != null)
-            txtPointsNum.setText("" + cc);
-
-        if (pref.getUserLogged().getCoupons() != null)
-            txtTicketsNum.setText("" + pref.getUserLogged().getCoupons());
+        txtPointsNum.setText("" + pref.getUserPointsFromPk());
+        txtTicketsNum.setText("" + pref.getUserCouponsFromPk());
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         navMenuAdapter = new NavMenuAdapter(this, drawer_layout, this);
@@ -257,21 +253,6 @@ public class MainActivity2 extends BaseActivity implements MainView,
 
     }
 
-
-//    @Override
-//    public void onBackPressed() {
-//        if (getSupportFragmentManager().findFragmentById(R.id.main_activity_container) instanceof MainFragment) {
-//            finishAffinity();
-//        } else {
-//
-////            getSupportFragmentManager().beginTransaction().
-////                    replace(R.id.main_activity_container,
-////                            new MainFragment()).commit();
-//            bottomNavigation.setCurrentItem(0);
-//
-//        }
-//    }
-
     @Override
     public void showEmpty() {
 
@@ -283,7 +264,7 @@ public class MainActivity2 extends BaseActivity implements MainView,
 
 
         txtPointsNum.setText("" + pref.getUserPointsFromPk());
-        //txtTicketsNum.setText("" + pref.getUserCouponsFromPk());
+        txtTicketsNum.setText("" + pref.getUserCouponsFromPk());
 
     }
 

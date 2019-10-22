@@ -4,12 +4,11 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class ChargeResponse {
-
     public class Data {
 
         @SerializedName("user_name")
         @Expose
-        private String user_name;
+        private String userName;
         @SerializedName("package")
         @Expose
         private String _package;
@@ -18,26 +17,26 @@ public class ChargeResponse {
         private String points;
         @SerializedName("package_id")
         @Expose
-        private Integer package_id;
+        private Integer packageId;
         @SerializedName("user_id")
         @Expose
-        private Integer user_id;
+        private Integer userId;
         @SerializedName("updated_at")
         @Expose
-        private String updated_at;
+        private String updatedAt;
         @SerializedName("created_at")
         @Expose
-        private String created_at;
+        private String createdAt;
         @SerializedName("id")
         @Expose
         private Integer id;
 
-        public String getUser_name() {
-            return user_name;
+        public String getUserName() {
+            return userName;
         }
 
-        public void setUser_name(String user_name) {
-            this.user_name = user_name;
+        public void setUserName(String userName) {
+            this.userName = userName;
         }
 
         public String getPackage() {
@@ -56,36 +55,36 @@ public class ChargeResponse {
             this.points = points;
         }
 
-        public Integer getPackage_id() {
-            return package_id;
+        public Integer getPackageId() {
+            return packageId;
         }
 
-        public void setPackage_id(Integer package_id) {
-            this.package_id = package_id;
+        public void setPackageId(Integer packageId) {
+            this.packageId = packageId;
         }
 
-        public Integer getUser_id() {
-            return user_id;
+        public Integer getUserId() {
+            return userId;
         }
 
-        public void setUser_id(Integer user_id) {
-            this.user_id = user_id;
+        public void setUserId(Integer userId) {
+            this.userId = userId;
         }
 
-        public String getUpdated_at() {
-            return updated_at;
+        public String getUpdatedAt() {
+            return updatedAt;
         }
 
-        public void setUpdated_at(String updated_at) {
-            this.updated_at = updated_at;
+        public void setUpdatedAt(String updatedAt) {
+            this.updatedAt = updatedAt;
         }
 
-        public String getCreated_at() {
-            return created_at;
+        public String getCreatedAt() {
+            return createdAt;
         }
 
-        public void setCreated_at(String created_at) {
-            this.created_at = created_at;
+        public void setCreatedAt(String createdAt) {
+            this.createdAt = createdAt;
         }
 
         public Integer getId() {
@@ -110,6 +109,12 @@ public class ChargeResponse {
     @SerializedName("data")
     @Expose
     private Data data;
+    @SerializedName("points_count")
+    @Expose
+    private Integer pointsCount;
+    @SerializedName("tickets_count")
+    @Expose
+    private Integer ticketsCount;
 
     public String getSuccess() {
         return success;
@@ -141,6 +146,22 @@ public class ChargeResponse {
 
     public void setData(Data data) {
         this.data = data;
+    }
+
+    public Integer getPointsCount() {
+        return pointsCount;
+    }
+
+    public void setPointsCount(Integer pointsCount) {
+        this.pointsCount = pointsCount;
+    }
+
+    public Integer getTicketsCount() {
+        return ticketsCount;
+    }
+
+    public void setTicketsCount(Integer ticketsCount) {
+        this.ticketsCount = ticketsCount;
     }
 
 
