@@ -1,5 +1,7 @@
 package com.RiyadSoftware.nsebkapp.Ui.Register;
 
+import androidx.annotation.NonNull;
+
 import com.RiyadSoftware.nsebkapp.base.BasePresenter;
 import com.RiyadSoftware.nsebkapp.data.CountriesResponse;
 import com.RiyadSoftware.nsebkapp.data.DataManager;
@@ -9,12 +11,13 @@ import com.RiyadSoftware.nsebkapp.data.models.RegisterRequest;
 import com.RiyadSoftware.nsebkapp.data.models.RegisterResponse;
 import com.RiyadSoftware.nsebkapp.data.models.VerifyResponse;
 import com.RiyadSoftware.nsebkapp.injection.ConfigPersistent;
+import com.RiyadSoftware.nsebkapp.models.JopModel;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.inject.Inject;
 
-import androidx.annotation.NonNull;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
@@ -72,7 +75,8 @@ public class RegisterPresenter extends BasePresenter<RegisterView> {
                     }
                 });
     }
-    public void verifyUsr(Map<String , String> body) {
+
+    public void verifyUsr(Map<String, String> body) {
         getMvpView().showLoader();
         mDataManager.verifyUser(body)
                 .observeOn(AndroidSchedulers.mainThread())
@@ -101,6 +105,7 @@ public class RegisterPresenter extends BasePresenter<RegisterView> {
                     }
                 });
     }
+
     public void getCountries() {
         getMvpView().showLoader();
         mDataManager.getCountries()
@@ -130,6 +135,7 @@ public class RegisterPresenter extends BasePresenter<RegisterView> {
                     }
                 });
     }
+
     public void getCities(CityRequest cityRequest) {
         getMvpView().showLoader();
         mDataManager.getCities(cityRequest)
@@ -160,6 +166,57 @@ public class RegisterPresenter extends BasePresenter<RegisterView> {
                 });
     }
 
+    public void getJop() {
+        mDataManager.getJop()
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.io())
+                .subscribe(new Observer<List<JopModel>>() {
+                    @Override
+                    public void onSubscribe(@NonNull Disposable d) {
+                        mDisposable = d;
+                    }
 
+                    @Override
+                    public void onNext(@NonNull List<JopModel> response) {
+                        getMvpView().showJops(response);
+                    }
+
+                    @Override
+                    public void onError(@NonNull Throwable e) {
+                        getMvpView().showErrorInRegister(e);
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
+    }
+    public void getAge() {
+        mDataManager.getAge()
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.io())
+                .subscribe(new Observer<List<JopModel>>() {
+                    @Override
+                    public void onSubscribe(@NonNull Disposable d) {
+                        mDisposable = d;
+                    }
+
+                    @Override
+                    public void onNext(@NonNull List<JopModel> response) {
+                        getMvpView().showAge(response);
+                    }
+
+                    @Override
+                    public void onError(@NonNull Throwable e) {
+                        getMvpView().showErrorInRegister(e);
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
+    }
 
 }

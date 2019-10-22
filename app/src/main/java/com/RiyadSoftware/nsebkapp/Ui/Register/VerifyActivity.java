@@ -15,10 +15,12 @@ import com.RiyadSoftware.nsebkapp.data.models.CitiesModel;
 import com.RiyadSoftware.nsebkapp.data.models.LoginResponse;
 import com.RiyadSoftware.nsebkapp.data.models.RegisterResponse;
 import com.RiyadSoftware.nsebkapp.data.models.VerifyResponse;
+import com.RiyadSoftware.nsebkapp.models.JopModel;
 import com.RiyadSoftware.nsebkapp.util.SharedPrefDueDate;
 import com.google.gson.Gson;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.inject.Inject;
@@ -62,6 +64,16 @@ public class VerifyActivity extends BaseActivity implements RegisterView {
 
     @Override
     public void navigateToMain(RegisterResponse response) {
+
+    }
+
+    @Override
+    public void showJops(List<JopModel> jopModel) {
+
+    }
+
+    @Override
+    public void showAge(List<JopModel> jopModel) {
 
     }
 

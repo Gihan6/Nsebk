@@ -30,6 +30,7 @@ import com.RiyadSoftware.nsebkapp.Ui.Register.RegisterPresenter;
 import com.RiyadSoftware.nsebkapp.Ui.Register.RegisterView;
 import com.RiyadSoftware.nsebkapp.Ui.Register.VerifyActivity;
 import com.RiyadSoftware.nsebkapp.adapters.CustomArrayAdapter;
+import com.RiyadSoftware.nsebkapp.adapters.SpinnerJopAdapter;
 import com.RiyadSoftware.nsebkapp.base.BaseActivity;
 import com.RiyadSoftware.nsebkapp.data.CountriesResponse;
 import com.RiyadSoftware.nsebkapp.data.models.CitiesModel;
@@ -37,6 +38,7 @@ import com.RiyadSoftware.nsebkapp.data.models.CityRequest;
 import com.RiyadSoftware.nsebkapp.data.models.RegisterRequest;
 import com.RiyadSoftware.nsebkapp.data.models.RegisterResponse;
 import com.RiyadSoftware.nsebkapp.data.models.VerifyResponse;
+import com.RiyadSoftware.nsebkapp.models.JopModel;
 import com.RiyadSoftware.nsebkapp.util.SharedPrefDueDate;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -121,7 +123,7 @@ public class Register extends BaseActivity implements RegisterView {
     @BindView(R.id.phoneET)
     EditText phoneET;
     @BindView(R.id.jobET)
-    EditText jobET;
+    Spinner jobET;
     @BindView(R.id.maleRB)
     RadioButton maleRB;
     @BindView(R.id.femaleRB)
@@ -129,37 +131,46 @@ public class Register extends BaseActivity implements RegisterView {
     @BindView(R.id.genderRG)
     RadioGroup genderRG;
     @BindView(R.id.birthET)
-    EditText birthET;
+    Spinner birthET;
     @BindView(R.id.check1)
     AppCompatCheckBox check1;
     @BindView(R.id.check2)
     AppCompatCheckBox check2;
 
     TextWatcher textWatcher;
-
-    //init the third parent
-    //init the pref
     SharedPrefDueDate pref;
     List<CountriesResponse.InnerDatum> coInnerData = new ArrayList<>();
     List<CitiesModel.Datum> citiesData = new ArrayList<>();
     int mCurrentStep = 1;
     // to choose the gender
+    int idJop = -1;
+    int idAge = -1;
     String gender = "";
     @Inject
     RegisterPresenter mRegisterPresenter;
 
-    // inti the views
-//    ArrayList<CountryModel> countries = new ArrayList<>();
-//
-//    ArrayAdapter<CharSequence> countryAdapter;
-
-
-    // action the birthdate
-    //firebase
     private FirebaseAuth mAuth;
     private FirebaseUser mFirebaseUser;
     // initialize DatePicker
     private DatePickerDialog fromDatePickerDialog;
+
+    SpinnerJopAdapter jopAdapter;
+    List<JopModel> jobs;
+
+    SpinnerJopAdapter ageAdapter;
+    List<JopModel> ages;
+
+    private void initAdapter() {
+        jopAdapter = new SpinnerJopAdapter(getApplicationContext(), jobs);
+        jobET.setAdapter(jopAdapter);
+
+    }
+
+    private void initAdapterAge() {
+        ageAdapter = new SpinnerJopAdapter(getApplicationContext(), ages);
+        birthET.setAdapter(ageAdapter);
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -173,13 +184,31 @@ public class Register extends BaseActivity implements RegisterView {
 
         pref = new SharedPrefDueDate(this);
 
+        jobET.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                idJop = i;
+            }
 
-        //the city spinner
-//        countryAdapter = ArrayAdapter.createFromResource(this,
-//                R.array.gavor_array, android.R.layout.simple_spinner_item);
-//
-//        countryAdapter.setDropDownViewResource(R.layout.spinner_center_item);
-//        countrySP.setAdapter(countryAdapter);
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+        birthET.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                idAge = i;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+        mRegisterPresenter.getJop();
+        mRegisterPresenter.getAge();
 
         textWatcher = new TextWatcher() {
             @Override
@@ -245,15 +274,6 @@ public class Register extends BaseActivity implements RegisterView {
         //get the date using DatePickerDialog
         setDateTimeField();
 
-        //action for edit wedding date Button
-        birthET.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // show DatePickerDialog
-                fromDatePickerDialog.show();
-            }
-        });
-
 
         countrySP.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -283,7 +303,7 @@ public class Register extends BaseActivity implements RegisterView {
                 String date = year + "-" + (monthOfYear < 10 ? "0" + monthOfYear : monthOfYear) + "-" +
                         (dayOfMonth < 10 ? "0" + dayOfMonth : dayOfMonth);
 //                if (validateDate(date))
-                birthET.setText(date);
+//                birthET.setText(date);
             }
 
         }, newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
@@ -353,6 +373,7 @@ public class Register extends BaseActivity implements RegisterView {
 
         if (validate(2)) {
 //            showLoader();
+
             RegisterRequest registerRequest = new RegisterRequest(
                     fullnameET.getText().toString(),
                     usernameET.getText().toString(),
@@ -361,38 +382,12 @@ public class Register extends BaseActivity implements RegisterView {
                     String.valueOf(coInnerData.get(countrySP.getSelectedItemPosition()).getId()),
                     gender,
                     String.valueOf(citiesData.get(cities_sp.getSelectedItemPosition()).getCity_id()),
-                    jobET.getText().toString(),
-                    birthET.getText().toString(),
-                    tv_code.getText()+phoneET.getText().toString()
+                    idJop,
+                    idAge,
+                    tv_code.getText() + phoneET.getText().toString()
             );
             mRegisterPresenter.register(registerRequest);
 
-//            mAuth.createUserWithEmailAndPassword(emailET.getText().toString().trim(), passET.getText().toString())
-//                    .addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
-//                        @Override
-//                        public void onComplete(@NonNull Task<AuthResult> task) {
-//
-//                            if (!task.isSuccessful()) {
-//
-//                                hideLoader();
-//
-//
-//                                Log.d("google", "error ---     " + Objects.requireNonNull(task.getException()).getMessage());
-//
-//                                show(1);
-//                                Toast.makeText(getApplicationContext(), getString(R.string.wrong_register), Toast.LENGTH_LONG)
-//                                        .show();
-//                                //go to the login
-////                            login();
-//                            } else {
-////                            loading.setVisibility(View.GONE);
-//                                mFirebaseUser = mAuth.getCurrentUser();
-//                                // call the api to register the email and password
-//                                sendDataTOServer();
-//                            }
-//
-//                        }
-//                    });
 
         }
 
@@ -567,22 +562,17 @@ public class Register extends BaseActivity implements RegisterView {
                 passConfLN.setVisibility(View.VISIBLE);
             }
 
-//            if (!Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\\\S+$).{4,}$")
-//                    .matcher(passET.getText().toString().trim()).matches()) {
-//                Toast.makeText(this, getString(R.string.complex_pass), Toast.LENGTH_SHORT).show();
-//                return false;
-//            }
 
             return true;
         } else if (step == 2) {
 
             if (phoneET.getText().toString().isEmpty() ||
-                    jobET.getText().toString().isEmpty() || birthET.getText().toString().isEmpty()) {
+                    idJop == -1 || idAge == -1) {
                 Toast.makeText(Register.this, getString(R.string.complete_data), Toast.LENGTH_LONG).show();
                 return false;
             }
 
-            if (phoneET.getText().toString().length() != 10) {
+            if (phoneET.getText().toString().length() != 9) {
                 Toast.makeText(this, getString(R.string.phone_lenghth), Toast.LENGTH_SHORT).show();
                 return false;
             }
@@ -651,6 +641,22 @@ public class Register extends BaseActivity implements RegisterView {
         }
     }
 
+    @Override
+    public void showJops(List<JopModel> jopModel) {
+        if (jopModel != null) {
+            jobs = jopModel;
+            initAdapter();
+        }
+    }
+
+    @Override
+    public void showAge(List<JopModel> jopModel) {
+        if (jopModel != null) {
+            ages = jopModel;
+            initAdapterAge();
+        }
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -677,15 +683,14 @@ public class Register extends BaseActivity implements RegisterView {
             //--------------------here put country code--------------
 
 
-
             countrySP.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                     mRegisterPresenter.getCities(new CityRequest(coInnerData.get(i).getId()));
 
-                    if (coInnerData.get(i).getCountry_code()!=null&&!coInnerData.get(i).getCountry_code().equals("")){
+                    if (coInnerData.get(i).getCountry_code() != null && !coInnerData.get(i).getCountry_code().equals("")) {
                         tv_code.setText(coInnerData.get(i).getCountry_code());
-                    }else {
+                    } else {
                         tv_code.setText("");
                     }
                 }
@@ -744,7 +749,7 @@ public class Register extends BaseActivity implements RegisterView {
 
     @OnClick(R.id.check2)
     void goToService() {
-        startActivity(new Intent(getApplicationContext(),Conditions.class));
+        startActivity(new Intent(getApplicationContext(), Conditions.class));
 
     }
 }

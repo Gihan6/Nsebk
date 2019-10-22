@@ -52,12 +52,14 @@ import com.RiyadSoftware.nsebkapp.data.models.forgetPassword.NewPasswordRequest;
 import com.RiyadSoftware.nsebkapp.data.models.forgetPassword.NewPasswordResponse;
 import com.RiyadSoftware.nsebkapp.data.models.forgetPassword.VerifyCodeRequest;
 import com.RiyadSoftware.nsebkapp.data.models.forgetPassword.VerifyCodeResponse;
+import com.RiyadSoftware.nsebkapp.models.JopModel;
 import com.RiyadSoftware.nsebkapp.util.Constant;
 import com.RiyadSoftware.nsebkapp.util.SharedPrefDueDate;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -136,6 +138,12 @@ public interface RibotsService {
 
     @POST("Countries")
     Observable<CountriesResponse> getCountries();
+
+    @GET("jobs")
+    Observable<List<JopModel>> getJops();
+
+    @GET("ages")
+    Observable<List<JopModel>> getAge();
 
     @POST("verify_code")
     Observable<VerifyResponse> verifyUSer(@Body Map<String ,String> values);

@@ -5,7 +5,9 @@ import com.google.gson.annotations.SerializedName;
 
 public class RegisterRequest {
 
-    public RegisterRequest(String name , String user_name, String email, String password, String country, String gender, String city, String job, String birth_date, String mobile) {
+    public RegisterRequest(String name, String user_name, String email, String password,
+                           String country, String gender, String city, Integer job,
+                           Integer birth_date, String mobile) {
         this.user_name = user_name;
         this.name = name;
         this.email = email;
@@ -39,12 +41,12 @@ public class RegisterRequest {
     @SerializedName("city")
     @Expose
     private String city;
-    @SerializedName("job")
+    @SerializedName("job_id")
     @Expose
-    private String job;
-    @SerializedName("birth_date")
+    private Integer job;
+    @SerializedName("age_id")
     @Expose
-    private String birth_date;
+    private Integer birth_date;
     @SerializedName("mobile")
     @Expose
     private String mobile;
@@ -100,19 +102,19 @@ public class RegisterRequest {
         this.city = city;
     }
 
-    public String getJob() {
+    public Integer getJob() {
         return job;
     }
 
-    public void setJob(String job) {
+    public void setJob(Integer job) {
         this.job = job;
     }
 
-    public String getBirth_date() {
+    public Integer getBirth_date() {
         return birth_date;
     }
 
-    public void setBirth_date(String birth_date) {
+    public void setBirth_date(Integer birth_date) {
         this.birth_date = birth_date;
     }
 

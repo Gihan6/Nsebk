@@ -52,7 +52,9 @@ import com.RiyadSoftware.nsebkapp.data.models.forgetPassword.NewPasswordResponse
 import com.RiyadSoftware.nsebkapp.data.models.forgetPassword.VerifyCodeRequest;
 import com.RiyadSoftware.nsebkapp.data.models.forgetPassword.VerifyCodeResponse;
 import com.RiyadSoftware.nsebkapp.data.remote.RibotsService;
+import com.RiyadSoftware.nsebkapp.models.JopModel;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.inject.Inject;
@@ -153,7 +155,12 @@ public class DataManager {
         return mRibotsService.getCountries();
     }
 
-
+    public Observable<List<JopModel>> getJop() {
+        return mRibotsService.getJops();
+    }
+    public Observable<List<JopModel>> getAge() {
+        return mRibotsService.getAge();
+    }
     public Observable<VerifyResponse> verifyUser(Map<String, String> values) {
         return mRibotsService.verifyUSer(values);
     }
