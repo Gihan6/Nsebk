@@ -1,5 +1,6 @@
 package com.RiyadSoftware.nsebkapp.activities;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -29,6 +30,7 @@ import com.RiyadSoftware.nsebkapp.fragments.MainFragment;
 import com.RiyadSoftware.nsebkapp.fragments.MyFavorites;
 import com.RiyadSoftware.nsebkapp.fragments.PackageFragment;
 import com.RiyadSoftware.nsebkapp.fragments.Rewards;
+import com.RiyadSoftware.nsebkapp.util.LocaleManager;
 import com.RiyadSoftware.nsebkapp.util.SharedPrefDueDate;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
@@ -261,8 +263,6 @@ public class MainActivity2 extends BaseActivity implements MainView,
     @Override
     protected void onResume() {
         super.onResume();
-
-
         txtPointsNum.setText("" + pref.getUserPointsFromPk());
         txtTicketsNum.setText("" + pref.getUserCouponsFromPk());
 

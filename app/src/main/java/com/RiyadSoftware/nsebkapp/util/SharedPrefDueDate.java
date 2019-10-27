@@ -95,6 +95,8 @@ public class SharedPrefDueDate {
         Configuration config = new Configuration();
         config.locale = locale;
         _context.getResources().updateConfiguration(config, _context.getResources().getDisplayMetrics());
+
+        LocaleManager.setLocale(_context,"ar");
         editor.putString("lan", "ar");
         editor.apply();
 

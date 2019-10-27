@@ -1,5 +1,6 @@
 package com.RiyadSoftware.nsebkapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -9,6 +10,7 @@ import com.RiyadSoftware.nsebkapp.Ui.Register.VerifyActivity;
 import com.RiyadSoftware.nsebkapp.activities.LanguageActivity;
 import com.RiyadSoftware.nsebkapp.activities.MainActivity;
 import com.RiyadSoftware.nsebkapp.activities.MainActivity2;
+import com.RiyadSoftware.nsebkapp.util.LocaleManager;
 import com.RiyadSoftware.nsebkapp.util.SharedPrefDueDate;
 
 public class Splash extends AppCompatActivity {
