@@ -4,9 +4,9 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class ReplaceAwardRequest {
-    public ReplaceAwardRequest(String token, int awards_id) {
+    public ReplaceAwardRequest(String token, int award_id) {
         this.token = token;
-        this.awards_id = awards_id;
+        this.award_id = award_id;
     }
 
     @SerializedName("token")
@@ -22,15 +22,15 @@ public class ReplaceAwardRequest {
     }
 
     public int getAwards_id() {
-        return awards_id;
+        return award_id;
     }
 
-    public void setAwards_id(int awards_id) {
-        this.awards_id = awards_id;
+    public void setAward_id(int award_id) {
+        this.award_id = award_id;
     }
 
-    @SerializedName("awards_id")
+    @SerializedName("award_id")
     @Expose
-    public int awards_id;
+    public int award_id;
 
 }

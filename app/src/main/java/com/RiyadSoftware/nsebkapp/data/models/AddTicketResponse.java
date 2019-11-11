@@ -6,6 +6,12 @@ import com.google.gson.annotations.SerializedName;
 public class AddTicketResponse {
     public class Data {
 
+        @SerializedName("user_coupons")
+        @Expose
+        public String userCoupon;
+        @SerializedName("user_points")
+        @Expose
+        public Integer userPoints;
         @SerializedName("name")
         @Expose
         public String name;
@@ -15,6 +21,22 @@ public class AddTicketResponse {
         @SerializedName("deal_id")
         @Expose
         public Integer dealId;
+
+        public String getUserCoupon() {
+            return userCoupon;
+        }
+
+        public void setUserCoupon(String userCoupon) {
+            this.userCoupon = userCoupon;
+        }
+
+        public Integer getUserPoints() {
+            return userPoints;
+        }
+
+        public void setUserPoints(Integer userPoints) {
+            this.userPoints = userPoints;
+        }
 
         public String getName() {
             return name;

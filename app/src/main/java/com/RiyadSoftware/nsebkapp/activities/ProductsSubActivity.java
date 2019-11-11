@@ -20,6 +20,7 @@ import com.RiyadSoftware.nsebkapp.data.models.CategoryProductsRequest;
 import com.RiyadSoftware.nsebkapp.data.models.HomeModel;
 import com.RiyadSoftware.nsebkapp.util.SharedPrefDueDate;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -99,6 +100,7 @@ public class ProductsSubActivity extends BaseActivity implements ProductSubView,
                     offersResponseModel.getData().getDealss().size() == 0) {
                 no_data.setVisibility(View.VISIBLE);
             } else {
+                mList=new ArrayList<>();
                 mList = offersResponseModel.getData().getDealss();
                 adapter = new DealsAdapter(this, mList, this, true);
             }

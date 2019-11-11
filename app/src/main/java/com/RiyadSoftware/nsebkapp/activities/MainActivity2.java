@@ -86,13 +86,16 @@ public class MainActivity2 extends BaseActivity implements MainView,
         if (pref.getLanguage().equals("ar")) {
             radioAr.setChecked(true);
             radioEn.setChecked(false);
+            nav_view.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
             getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
+            setLanguageFromNavMenu();
 
         } else {
             radioEn.setChecked(true);
             radioAr.setChecked(false);
             //nav_view.setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
             getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+            setLanguageFromNavMenu();
         }
 
         activityComponent().inject(this);

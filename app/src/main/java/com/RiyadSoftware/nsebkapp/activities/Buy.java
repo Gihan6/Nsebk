@@ -283,13 +283,7 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCancelable(false);
         dialog.setContentView(R.layout.buy_dialog);
-//        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
-//        lp.copyFrom(dialog.getWindow().getAttributes());
-//        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
-//        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
-//        dialog.show();
-//        dialog.getWindow().setAttributes(lp);
-// retrieve display dimensions
+
         Rect displayRectangle = new Rect();
         Window window = getWindow();
         window.getDecorView().getWindowVisibleDisplayFrame(displayRectangle);
@@ -298,7 +292,6 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.buy_dialog, null);
         layout.setMinimumWidth((int) (displayRectangle.width() * 0.7f));
-//        layout.setMinimumHeight((int)(displayRectangle.height() * 0.7f));
         dialog.setContentView(layout);
         TextView dialogButton = dialog.findViewById(R.id.cancel_tv);
         TextView ok_tv = dialog.findViewById(R.id.ok_tv);
@@ -318,7 +311,8 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
                             (new AddTicketRequest(
                                     new SharedPrefDueDate(Buy.this).getUserLogged().getRemember_token(),
                                     String.valueOf(deal_id),
-                                    priceET.getText().toString()));
+                                    priceET.getText().toString(),
+                                    mDealDetailsResponse.getData().getDealDetails().getTickets()));
                 } else {
                     dialog.dismiss();
                     finish();
@@ -348,13 +342,7 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCancelable(false);
         dialog.setContentView(R.layout.buy_dialog);
-//        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
-//        lp.copyFrom(dialog.getWindow().getAttributes());
-//        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
-//        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
-//        dialog.show();
-//        dialog.getWindow().setAttributes(lp);
-// retrieve display dimensions
+
         Rect displayRectangle = new Rect();
         Window window = getWindow();
         window.getDecorView().getWindowVisibleDisplayFrame(displayRectangle);
@@ -395,14 +383,7 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCancelable(false);
-        dialog.setContentView(R.layout.buy_dialog);
-//        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
-//        lp.copyFrom(dialog.getWindow().getAttributes());
-//        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
-//        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
-//        dialog.show();
-//        dialog.getWindow().setAttributes(lp);
-// retrieve display dimensions
+
         Rect displayRectangle = new Rect();
         Window window = getWindow();
         window.getDecorView().getWindowVisibleDisplayFrame(displayRectangle);
@@ -464,14 +445,14 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
 
         if (isPartInDealBefore) {
             showDialog();
-        } else {
-            addTicketPresenter.AddTicket(new AddTicketRequest(new SharedPrefDueDate(this).getUserLogged().getRemember_token(),
-                    String.valueOf(deal_id), priceET.getText().toString()));
-        }
-//        Toast.makeText(Buy.this,getString(R.string.doneprice),Toast.LENGTH_LONG).show();
-//        finish();
 
-//        startActivity(new Intent(this,Winner.class));
+        } else {
+            addTicketPresenter.AddTicket(new AddTicketRequest(
+                    new SharedPrefDueDate(this).getUserLogged().getRemember_token(),
+                    String.valueOf(deal_id), priceET.getText().toString(),
+                    mDealDetailsResponse.getData().getDealDetails().getTickets()));
+        }
+
     }
 
     @SuppressLint("StringFormatInvalid")
@@ -483,9 +464,9 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
 
             SharedPrefDueDate pref = new SharedPrefDueDate(this);
 
-            pref.setUserPointsFromPk(""+(pref.getUserPointsFromPk() + Integer.parseInt(mDealDetailsResponse.getData().getDealDetails().getTenderCoupon())));
+            pref.setUserPointsFromPk(""+addTicketResponse.data.getUserPoints());
 
-            pref.setUserCouponsFromPk(""+(pref.getUserCouponsFromPk() - Integer.parseInt(mDealDetailsResponse.getData().getDealDetails().getPoints())));
+            pref.setUserCouponsFromPk(""+addTicketResponse.data.getUserCoupon());
 
 
             Toast.makeText(this, "" + addTicketResponse.message, Toast.LENGTH_SHORT).show();
@@ -591,8 +572,8 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
             //----
             tv_title.setText(dealDetailsResponse.getData().getDealDetails().getTitle());
             clearify_tv.setText("عند دخولك الصفقة سيتم حسم " + dealDetailsResponse.getData()
-                    .getDealDetails().getPoints() + " تذاكر من رصيدك وستحصل علي " +
-                    dealDetailsResponse.getData().getDealDetails().getTenderCoupon() + "نقطه مكافآت");
+                    .getDealDetails().getTickets() + " تذاكر من رصيدك وستحصل علي " +
+                    dealDetailsResponse.getData().getDealDetails().getPoints() + "نقطه مكافآت");
             //----
 
             time.setText(dealDetailsResponse.getData().getDealDetails().getExpiryDate().split(" ")[1]);
@@ -615,8 +596,8 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
                 minPriceTV.setText(dealDetailsResponse.getData().getDealDetails().getInitialPrice() + " " + getString(R.string.dollar_currency));
             }
 
-            pointsTV.setText(dealDetailsResponse.getData().getDealDetails().getPoints() == null ? 0 + "  " + getString(R.string.tickets) :
-                    dealDetailsResponse.getData().getDealDetails().getPoints() + "  " + getString(R.string.tickets));
+            pointsTV.setText(dealDetailsResponse.getData().getDealDetails().getTickets() == null ? 0 + "  " + getString(R.string.tickets) :
+                    dealDetailsResponse.getData().getDealDetails().getTickets() + "  " + getString(R.string.tickets));
 
 
             if (dealDetailsResponse.getData().getDealDetails().getWinner_id() != null) {

@@ -85,7 +85,7 @@ public interface RibotsService {
     @POST("Awards")
     Observable<RewardsResponse> getRewards(@Body HomeRequest homeRequest);
 
-    @POST("DealDetails")
+    @POST("useAward")
     Observable<ReplaceAwardResponse> getReplaceAwards(@Body ReplaceAwardRequest replaceAwardRequest);
 
     @POST("forget_password")

@@ -121,13 +121,6 @@ public class Login extends BaseActivity implements LoginView {
 
         }
 
-//            Intent i = new Intent(LoginActivity.this, MainActivity.class);
-//            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//            startActivity(i);
-
-
-//            Toast.makeText(Login.this, getString(R.string.wrong_login), Toast.LENGTH_LONG).show();
-
     }
 
 
@@ -160,18 +153,12 @@ public class Login extends BaseActivity implements LoginView {
             i.putExtra("password", passET.getText().toString());
             startActivity(i);
         } else {
-//            String error = "";
-//            for (LoginResponse.error errorClass:response.getErrors())
-//                error+=errorClass.getMessage()+"\n";
-
             Toast.makeText(this, "" + response.getErrors(), Toast.LENGTH_SHORT).show();
-//            showErrorInLogin();
         }
     }
 
     @Override
     public void showErrorInLogin() {
-//        Toast.makeText(this, getString(R.string.error_login), Toast.LENGTH_SHORT).show();
     }
 
     @Override

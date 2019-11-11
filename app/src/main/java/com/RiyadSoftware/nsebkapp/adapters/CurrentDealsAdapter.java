@@ -91,7 +91,7 @@ public class CurrentDealsAdapter extends RecyclerView.Adapter<CurrentDealsAdapte
 
         holder.titleTV.setText(data.get(postion).getTitle());
         holder.product_price.setText(data.get(postion).getInitial_price() + " " + context.getString(R.string.sar));
-        holder.points_tv.setText(data.get(postion).getPoints() + " " + context.getString(R.string.tickets));
+        holder.points_tv.setText(data.get(postion).getTickets() + " " + context.getString(R.string.tickets));
 //        holder.points_tv.setText(data.get(postion).getPoints() + " " + context.getString(R.string.points));
         if (isCommingSoon) {
             holder.time_to_end.setText(context.getString(R.string.comming_soon));
