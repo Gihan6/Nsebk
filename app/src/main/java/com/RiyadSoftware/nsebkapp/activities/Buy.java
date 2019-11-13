@@ -311,7 +311,8 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
                             (new AddTicketRequest(
                                     new SharedPrefDueDate(Buy.this).getUserLogged().getRemember_token(),
                                     String.valueOf(deal_id),
-                                    priceET.getText().toString(),
+
+                                            mDealDetailsResponse.getData().getDealDetails().getPoints(),
                                     mDealDetailsResponse.getData().getDealDetails().getTickets()));
                 } else {
                     dialog.dismiss();
@@ -449,7 +450,8 @@ public class Buy extends BaseActivity implements AddTicketMvpView {
         } else {
             addTicketPresenter.AddTicket(new AddTicketRequest(
                     new SharedPrefDueDate(this).getUserLogged().getRemember_token(),
-                    String.valueOf(deal_id), priceET.getText().toString(),
+                    String.valueOf(deal_id),
+                    mDealDetailsResponse.getData().getDealDetails().getPoints(),
                     mDealDetailsResponse.getData().getDealDetails().getTickets()));
         }
 
